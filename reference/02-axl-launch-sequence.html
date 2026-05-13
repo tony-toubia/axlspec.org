@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The AXL v1.0 Launch Sequence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FBFAF7;
+  --bg-alt: #F4F1EA;
+  --ink: #1A1A1A;
+  --ink-soft: #404040;
+  --ink-muted: #6B6760;
+  --accent: #1F2937;
+  --rule: #E0DCD0;
+  --rule-strong: #C8C2B2;
+  --highlight: #B04A3F;
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Inter', -apple-system, system-ui, sans-serif;
+  --mono: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: var(--sans); font-size: 15px; line-height: 1.65;
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+.page { max-width: 760px; margin: 0 auto; padding: 80px 56px 120px; }
+
+.cover { border-bottom: 1px solid var(--rule-strong); padding-bottom: 48px; margin-bottom: 56px; }
+.cover .eyebrow {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--ink-muted); margin-bottom: 24px;
+}
+.cover h1 {
+  font-family: var(--serif); font-weight: 500; font-size: 46px;
+  line-height: 1.05; letter-spacing: -0.02em; margin: 0 0 16px;
+}
+.cover h1 em { font-style: italic; font-weight: 400; }
+.cover .subtitle {
+  font-family: var(--serif); font-style: italic; font-weight: 400;
+  font-size: 21px; line-height: 1.4; color: var(--ink-soft);
+  margin: 0 0 40px; max-width: 580px;
+}
+.cover dl {
+  display: grid; grid-template-columns: 140px 1fr;
+  gap: 8px 24px; font-size: 13px;
+  border-top: 1px solid var(--rule); padding-top: 24px;
+}
+.cover dt {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--ink-muted); font-weight: 500;
+}
+.cover dd { margin: 0; color: var(--ink-soft); }
+
+h2 {
+  font-family: var(--serif); font-weight: 500; font-size: 28px;
+  line-height: 1.2; letter-spacing: -0.01em;
+  margin: 72px 0 20px;
+}
+
+p { margin: 0 0 14px; color: var(--ink-soft); }
+p strong { color: var(--ink); font-weight: 600; }
+ul, ol { margin: 0 0 14px; padding-left: 22px; color: var(--ink-soft); }
+li { margin-bottom: 5px; }
+
+a { color: var(--accent); text-decoration: underline; text-decoration-color: var(--rule-strong); text-underline-offset: 3px; }
+code { font-family: var(--mono); font-size: 0.86em; background: var(--bg-alt); padding: 1px 5px; border-radius: 3px; color: var(--ink); }
+
+/* TIMELINE OVERVIEW */
+.timeline-summary {
+  background: var(--bg-alt); border: 1px solid var(--rule-strong);
+  padding: 28px 32px; margin: 32px 0 64px;
+}
+.timeline-summary h3 {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--ink-muted);
+  margin: 0 0 16px; font-weight: 500;
+}
+.timeline-summary ol { padding-left: 0; list-style: none; margin: 0; }
+.timeline-summary li {
+  display: grid; grid-template-columns: 84px 110px 1fr;
+  gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--rule);
+  font-size: 14px; align-items: baseline;
+}
+.timeline-summary li:last-child { border-bottom: none; }
+.timeline-summary .phase-tag {
+  font-family: var(--mono); font-size: 12px; font-weight: 500;
+  color: var(--accent); letter-spacing: 0.05em;
+}
+.timeline-summary .phase-weeks {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--ink-muted); letter-spacing: 0.04em;
+}
+.timeline-summary .phase-name { color: var(--ink); font-weight: 500; }
+
+/* PHASE BLOCK */
+.phase {
+  margin: 64px 0;
+  padding-top: 40px;
+  border-top: 2px solid var(--ink);
+}
+.phase-header {
+  display: flex; align-items: baseline; gap: 16px;
+  margin-bottom: 8px; flex-wrap: wrap;
+}
+.phase-header .label {
+  font-family: var(--mono); font-size: 12px; font-weight: 500;
+  color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase;
+}
+.phase-header .weeks {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--ink-muted); letter-spacing: 0.04em;
+}
+.phase-title {
+  font-family: var(--serif); font-weight: 500; font-size: 32px;
+  line-height: 1.15; letter-spacing: -0.015em;
+  color: var(--ink); margin: 4px 0 16px;
+}
+.phase-title em { font-style: italic; font-weight: 400; }
+.phase-summary {
+  font-family: var(--serif); font-style: italic; font-size: 17px;
+  line-height: 1.55; color: var(--ink-soft);
+  margin: 0 0 32px; max-width: 580px;
+}
+
+.phase h3 {
+  font-family: var(--sans); font-weight: 600; font-size: 12px;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ink); margin: 32px 0 12px;
+  padding-bottom: 6px; border-bottom: 1px solid var(--rule);
+}
+
+/* DELIVERABLE BLOCKS */
+.del-list {
+  list-style: none; padding: 0; margin: 14px 0;
+}
+.del-list li {
+  display: grid; grid-template-columns: 28px 1fr;
+  gap: 12px; padding: 8px 0;
+  border-bottom: 1px solid var(--rule); font-size: 14px;
+  align-items: baseline;
+}
+.del-list li:last-child { border-bottom: none; }
+.del-list .marker {
+  font-family: var(--mono); font-size: 11px; font-weight: 500;
+  color: var(--accent); letter-spacing: 0.05em;
+}
+.del-list strong { color: var(--ink); }
+
+/* OWNER GRID */
+.owner-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 16px; margin: 16px 0;
+}
+.owner-cell {
+  font-size: 13px; padding: 12px 14px;
+  background: var(--bg-alt); border-left: 2px solid var(--accent);
+}
+.owner-cell .label {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--ink-muted);
+  margin-bottom: 4px; font-weight: 500;
+}
+.owner-cell .value { color: var(--ink); font-weight: 500; }
+
+/* METRICS */
+.metrics {
+  background: transparent; border: 1px solid var(--rule-strong);
+  padding: 20px 24px; margin: 20px 0;
+}
+.metrics h4 {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--highlight);
+  margin: 0 0 12px; font-weight: 500;
+}
+.metrics ul { margin: 0; padding-left: 20px; font-size: 13.5px; }
+.metrics li { margin-bottom: 4px; }
+
+/* RISK CALLOUT */
+.risk {
+  border-left: 3px solid var(--highlight);
+  padding: 14px 20px; margin: 24px 0;
+  font-size: 13.5px; background: rgba(176,74,63,0.03);
+}
+.risk strong { color: var(--highlight); font-weight: 600; }
+
+.colophon {
+  margin-top: 80px; padding-top: 24px;
+  border-top: 1px solid var(--rule-strong);
+  font-size: 12px; color: var(--ink-muted);
+  font-family: var(--serif); font-style: italic;
+}
+
+@media print {
+  body { background: white; font-size: 10.5pt; }
+  .page { max-width: 100%; padding: 0; }
+  .phase { page-break-before: always; }
+  .phase:first-of-type { page-break-before: auto; }
+  @page { margin: 22mm 20mm; }
+}
+@media (max-width: 700px) {
+  .page { padding: 48px 24px; }
+  .cover h1 { font-size: 32px; }
+  .cover dl, .owner-grid { grid-template-columns: 1fr; gap: 4px; }
+  .cover dt { margin-top: 10px; }
+  .timeline-summary li { grid-template-columns: 1fr; gap: 4px; }
+  .phase-title { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+<main class="page">
+
+<header class="cover">
+  <div class="eyebrow">Internal · Cadence executive team · Confidential</div>
+  <h1>The AXL v1.0<br><em>Launch Sequence</em></h1>
+  <p class="subtitle">A 24-week phased plan from foundation to ratification, structured against the precedent of CDP, OpenAPI, MCP, and adjacent specification launches.</p>
+  <dl>
+    <dt>Owner</dt><dd>Cadence founding team, in coordination with axl.org editorial</dd>
+    <dt>Horizon</dt><dd>24 weeks (Phase 1 → Phase 5 final publication)</dd>
+    <dt>Status</dt><dd>Draft plan — to be ratified by founders before Phase 1 spend</dd>
+    <dt>Reviewed against</dt><dd>The AXL Reference v1.0 (companion document)</dd>
+  </dl>
+</header>
+
+<section>
+  <h2>The five phases</h2>
+  <div class="timeline-summary">
+    <h3>Summary</h3>
+    <ol>
+      <li><span class="phase-tag">Phase 1</span><span class="phase-weeks">Weeks −8 to 0</span><span class="phase-name">Foundation — IP, infra, reference implementation, analyst pre-briefs</span></li>
+      <li><span class="phase-tag">Phase 2</span><span class="phase-weeks">Weeks 0 to 1</span><span class="phase-name">Public draft launch — manifesto and 60-day comment period</span></li>
+      <li><span class="phase-tag">Phase 3</span><span class="phase-weeks">Weeks 1 to 8</span><span class="phase-name">Recruitment — vendor outreach, working groups, technical writing</span></li>
+      <li><span class="phase-tag">Phase 4</span><span class="phase-weeks">Weeks 8 to 16</span><span class="phase-name">Comment integration — release candidates, first attestations, buyer's-guide push</span></li>
+      <li><span class="phase-tag">Phase 5</span><span class="phase-weeks">Weeks 16 to 24</span><span class="phase-name">Ratification — v1.0 final, certification opens, first analyst report cycle</span></li>
+    </ol>
+  </div>
+  <p>The sequence is calibrated against three things at once: the timing of analyst-firm publication cycles (Forrester Wave nominations, Gartner Cool Vendor research windows), the need for a real public-comment period to maintain credibility as an open specification rather than a vendor artifact, and the operational reality of a small founding team. Compression below 18 weeks is possible but degrades credibility; expansion beyond 30 weeks invites a competitor to publish first.</p>
+</section>
+
+<!-- PHASE 1 -->
+<section class="phase">
+  <div class="phase-header">
+    <span class="label">Phase 1 · Foundation</span>
+    <span class="weeks">Weeks −8 to 0</span>
+  </div>
+  <h2 class="phase-title">Build the substrate <em>before</em> the world sees it.</h2>
+  <p class="phase-summary">Everything in this phase is invisible to the market. The goal is to make the public draft launch in Phase 2 look like the publication of a serious specification, not a marketing event.</p>
+
+  <h3>Deliverables</h3>
+  <ul class="del-list">
+    <li><span class="marker">F1</span><span><strong>Trademark filings.</strong> AXL wordmark (Class 9 + 42, 1(b) ITU) filed via counsel. Certification-mark filing initiated. Trademark policy drafted. See companion brief.</span></li>
+    <li><span class="marker">F2</span><span><strong>Domain and handle acquisition.</strong> <code>axl.org</code>, <code>axl.dev</code>, <code>getaxl.com</code>, <code>theaxl.com</code> registered. Social handles secured: GitHub <code>axl-spec</code>, X/LinkedIn <code>@axlspec</code>.</span></li>
+    <li><span class="marker">F3</span><span><strong>axl.org legal entity.</strong> Initial structure (likely Cadence-controlled LLC) stood up. Operating agreement and editorial-board charter drafted. Counsel-recommended path to multi-stakeholder governance documented.</span></li>
+    <li><span class="marker">F4</span><span><strong>Reference implementation MVP.</strong> 500–1,000 LOC TypeScript, minimally L1-conformant, published privately at <code>github.com/axl-spec/axl-reference</code>. Repo public-ready by end of phase.</span></li>
+    <li><span class="marker">F5</span><span><strong>Specification site.</strong> <code>axl.org</code> built — single-page render of v1.0 spec, GitHub-backed for public comment, accessible URL structure (<code>/spec/v1.0</code>, <code>/glossary</code>, <code>/conformance</code>).</span></li>
+    <li><span class="marker">F6</span><span><strong>Analyst pre-briefings under embargo.</strong> 5–8 briefings booked: Forrester (Joe Stanhope or successor on martech), Gartner (martech VP analysts), IDC, Constellation, RedMonk. Each brief includes the v1.0 draft, the four-pillar argument, and the §10 landscape.</span></li>
+    <li><span class="marker">F7</span><span><strong>Press list and embargoed pitch.</strong> TechCrunch, MarTech Series, AdExchanger, The Information (martech beat), Protocol-equivalent. Pitch deck and Q&amp;A backgrounder prepared.</span></li>
+    <li><span class="marker">F8</span><span><strong>Founding-sponsor disclosure.</strong> Decision on whether to recruit one or two co-sponsoring vendors before public draft (a smaller experimentation tool willing to co-sign — even an early-stage vendor is fine; the optics matter).</span></li>
+  </ul>
+
+  <h3>Owner and budget</h3>
+  <div class="owner-grid">
+    <div class="owner-cell"><div class="label">Primary owner</div><div class="value">Founder + outside trademark counsel + technical lead</div></div>
+    <div class="owner-cell"><div class="label">Indicative spend</div><div class="value">$25k–$45k (TM + legal + domains + reference impl. labor)</div></div>
+  </div>
+
+  <div class="metrics">
+    <h4>Exit criteria — Phase 1 → Phase 2</h4>
+    <ul>
+      <li>Trademark filings submitted (not yet registered).</li>
+      <li>axl.org live, the spec rendered, GitHub repos public-ready.</li>
+      <li>Reference implementation MVP runnable on a demo page.</li>
+      <li>Minimum 3 analyst pre-briefings completed under embargo.</li>
+      <li>Founder-team go/no-go review on the public-launch press kit.</li>
+    </ul>
+  </div>
+
+  <div class="risk"><strong>Risk:</strong> the reference implementation is the easiest deliverable to underestimate. A non-runnable repo at launch undermines the spec's credibility more than any other single artifact. Resource accordingly.</div>
+</section>
+
+<!-- PHASE 2 -->
+<section class="phase">
+  <div class="phase-header">
+    <span class="label">Phase 2 · Public draft launch</span>
+    <span class="weeks">Weeks 0 to 1</span>
+  </div>
+  <h2 class="phase-title">Publish the manifesto. <em>Open the comment window.</em></h2>
+  <p class="phase-summary">A single high-orchestration week. The spec, the press, the analyst quotes, and the public-comment period all go live within five business days.</p>
+
+  <h3>Deliverables</h3>
+  <ul class="del-list">
+    <li><span class="marker">L1</span><span><strong>v1.0 Draft published</strong> at <code>axl.org/spec/v1.0</code>. Mirror at <code>cadence.ai/axl</code>. GitHub repo open for issues and ASP submissions.</span></li>
+    <li><span class="marker">L2</span><span><strong>Founder essay / launch post.</strong> Long-form, technical, on a publication that signals seriousness — Substack-class, not Medium. The essay frames the four pillars and the failure modes of the existing stack. Not pitchy.</span></li>
+    <li><span class="marker">L3</span><span><strong>Press coordination.</strong> 3–5 published pieces in the launch week. At least one technical-publication piece (The Information / Protocol / AdExchanger) and one analyst voice quoted in the press.</span></li>
+    <li><span class="marker">L4</span><span><strong>Hacker News / Lobsters / r/martech post.</strong> Calibrated, non-spammy, by a credible technical contributor (not an obvious marketing account).</span></li>
+    <li><span class="marker">L5</span><span><strong>60-day public comment period opens.</strong> ASP submission process documented. Editorial board commits to weekly triage of issues during the comment period.</span></li>
+    <li><span class="marker">L6</span><span><strong>Cadence × AXL lockup deployed</strong> across cadence.ai, sales materials, product UI. The "Cadence is the Agentic Experience Layer" line begins appearing in the wild.</span></li>
+  </ul>
+
+  <h3>Owner and budget</h3>
+  <div class="owner-grid">
+    <div class="owner-cell"><div class="label">Primary owner</div><div class="value">Founder (essay) + comms lead + technical lead (issue triage)</div></div>
+    <div class="owner-cell"><div class="label">Indicative spend</div><div class="value">$10k–$20k (PR support, design, launch logistics)</div></div>
+  </div>
+
+  <div class="metrics">
+    <h4>Success metrics — first 7 days</h4>
+    <ul>
+      <li>5,000+ unique visitors to <code>axl.org/spec/v1.0</code>.</li>
+      <li>≥3 published press / analyst pieces.</li>
+      <li>≥10 GitHub issues / ASPs filed against the spec by external contributors.</li>
+      <li>≥1 named §10.2 vendor publicly engaging (positively or critically; engagement is the metric).</li>
+      <li>≥50 stars on <code>github.com/axl-spec/axl-reference</code>.</li>
+    </ul>
+  </div>
+
+  <div class="risk"><strong>Risk:</strong> a quiet launch is much worse than a delayed launch. If the press coordination and analyst voices aren't lined up by the end of Phase 1, slip Phase 2 by a week rather than ship into silence.</div>
+</section>
+
+<!-- PHASE 3 -->
+<section class="phase">
+  <div class="phase-header">
+    <span class="label">Phase 3 · Recruitment</span>
+    <span class="weeks">Weeks 1 to 8</span>
+  </div>
+  <h2 class="phase-title">Drag the named vendors <em>onto our turf.</em></h2>
+  <p class="phase-summary">A category with one vendor doesn't get a Magic Quadrant. The §10.2 vendors are named in the spec on purpose — this phase converts naming into engagement.</p>
+
+  <h3>Deliverables</h3>
+  <ul class="del-list">
+    <li><span class="marker">R1</span><span><strong>Direct outreach to the six §10.2 vendors</strong> (Mutiny, Dynamic Yield, Optimizely, Adobe Target, Klaviyo, Braze). Personal letters from the founder to each named vendor's product/strategy lead. Companion artifact: AXL Specification Contributor Invitation.</span></li>
+    <li><span class="marker">R2</span><span><strong>Working-group formation.</strong> Five working groups stood up — one per pillar plus one for governance. Open invitations on GitHub. Initial meetings scheduled (biweekly).</span></li>
+    <li><span class="marker">R3</span><span><strong>Pillar deep-dive technical writing.</strong> Four long-form posts, one per pillar, by Cadence engineers, published to the AXL blog. Each one ends with an explicit ASP-call for open questions in that pillar.</span></li>
+    <li><span class="marker">R4</span><span><strong>Conference and podcast circuit.</strong> Speaking submissions to MarTech Conference, Lifecycle Marketing Summit, RevOps Co-Op, MEASURE Summit. Podcast bookings: Marketing Powerups, MarTech Tomorrow, B2B Growth, etc.</span></li>
+    <li><span class="marker">R5</span><span><strong>First self-attestations targeted.</strong> Soft outreach to 2–3 sympathetic vendors (smaller experimentation tools, customer-experience platforms with the right architecture) inviting them to file an L1 or L2 Conformance Statement. The first non-Cadence attestation is an inflection point.</span></li>
+    <li><span class="marker">R6</span><span><strong>Maturity-model launch.</strong> §9 of the Reference extracted into a standalone landing page at <code>axl.org/maturity</code> — buyer-facing, self-locating, suitable for procurement pre-reads.</span></li>
+  </ul>
+
+  <h3>Owner and budget</h3>
+  <div class="owner-grid">
+    <div class="owner-cell"><div class="label">Primary owner</div><div class="value">Founder (vendor outreach) + technical lead (working groups) + content lead (writing/speaking)</div></div>
+    <div class="owner-cell"><div class="label">Indicative spend</div><div class="value">$30k–$60k (content production, conference travel, working-group ops)</div></div>
+  </div>
+
+  <div class="metrics">
+    <h4>Success metrics — by end of Phase 3 (week 8)</h4>
+    <ul>
+      <li>≥2 of the six named vendors engaged in working-group discussions (public or private).</li>
+      <li>≥1 non-Cadence Conformance Statement published.</li>
+      <li>≥4 pillar deep-dive posts published.</li>
+      <li>≥3 conference speaking acceptances landed.</li>
+      <li>≥30 ASPs filed against the spec.</li>
+    </ul>
+  </div>
+
+  <div class="risk"><strong>Risk:</strong> if the named vendors completely ignore the spec and no third-party attestations emerge, the category-of-one optic hardens. Mitigation: have 1–2 sympathetic small-vendor attestations pre-arranged before Phase 3 starts.</div>
+</section>
+
+<!-- PHASE 4 -->
+<section class="phase">
+  <div class="phase-header">
+    <span class="label">Phase 4 · Comment integration</span>
+    <span class="weeks">Weeks 8 to 16</span>
+  </div>
+  <h2 class="phase-title">Process the comments. <em>Earn ratifiability.</em></h2>
+  <p class="phase-summary">The comment period closes at week 8. The next 8 weeks are spent demonstrably integrating community input. Visible iteration is what separates a real specification from a marketing document.</p>
+
+  <h3>Deliverables</h3>
+  <ul class="del-list">
+    <li><span class="marker">C1</span><span><strong>Comment triage and disposition.</strong> Every ASP and issue receives a public response and a disposition (accepted, deferred, declined with rationale). The disposition log is itself a published artifact.</span></li>
+    <li><span class="marker">C2</span><span><strong>v1.0 Release Candidate 1 (RC1).</strong> Published at week 10. Tracks visible changes from the v1.0 Draft. ASP credits in the editorial section.</span></li>
+    <li><span class="marker">C3</span><span><strong>v1.0 Release Candidate 2 (RC2).</strong> Published at week 13. Final substantive revisions. Editorial-only changes thereafter.</span></li>
+    <li><span class="marker">C4</span><span><strong>Buyer's guide standalone publication.</strong> §11 of the Reference extracted as a 4–6 page PDF. Designed, branded, distributed to procurement-channel newsletters. This is the single most-forwarded artifact the spec produces.</span></li>
+    <li><span class="marker">C5</span><span><strong>TCO calculator.</strong> Interactive page at <code>axl.org/tco</code>, parameterized by the buyer's current stack. Generates a printable comparison.</span></li>
+    <li><span class="marker">C6</span><span><strong>Conformance test suite v0.1.</strong> Published at <code>github.com/axl-spec/conformance-tests</code>. Covers Appendix A.1–A.5 with executable artifacts. Required for verified certification (Phase 5).</span></li>
+    <li><span class="marker">C7</span><span><strong>Round 2 analyst briefings.</strong> Re-engage the Phase 1 analysts with the post-comment-period evolution of the spec, attestation activity, and named-vendor engagement.</span></li>
+  </ul>
+
+  <h3>Owner and budget</h3>
+  <div class="owner-grid">
+    <div class="owner-cell"><div class="label">Primary owner</div><div class="value">Editorial board (triage) + technical lead (test suite) + design (buyer's guide)</div></div>
+    <div class="owner-cell"><div class="label">Indicative spend</div><div class="value">$20k–$40k (test-suite engineering, design, second analyst-relations cycle)</div></div>
+  </div>
+
+  <div class="metrics">
+    <h4>Success metrics — end of Phase 4 (week 16)</h4>
+    <ul>
+      <li>100% of submitted ASPs have a public disposition.</li>
+      <li>≥2 substantive specification changes incorporated from external contributors.</li>
+      <li>RC2 published with no breaking changes pending.</li>
+      <li>Buyer's guide downloaded ≥1,000 times in its first 30 days.</li>
+      <li>Conformance test suite runnable end-to-end on the reference implementation.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PHASE 5 -->
+<section class="phase">
+  <div class="phase-header">
+    <span class="label">Phase 5 · Ratification</span>
+    <span class="weeks">Weeks 16 to 24</span>
+  </div>
+  <h2 class="phase-title">Publish v1.0 final. <em>Open certification. Earn the first report.</em></h2>
+  <p class="phase-summary">The point at which the spec stops being a Cadence project and starts being industry infrastructure. Whether the analyst-coverage flywheel turns over depends on the previous four phases having actually delivered.</p>
+
+  <h3>Deliverables</h3>
+  <ul class="del-list">
+    <li><span class="marker">F1</span><span><strong>v1.0 Final published</strong> at week 16. Frozen specification text. Versioning policy (§12.2) takes over from this point — minor versions for clarifications, major version for breaking changes.</span></li>
+    <li><span class="marker">F2</span><span><strong>Verified certification opens.</strong> First applications accepted at <code>axl.org/certification</code>. Cadence applies for L3. Sympathetic vendors apply for L1 or L2. Certification fee schedule and reviewer panel published.</span></li>
+    <li><span class="marker">F3</span><span><strong>v1.0 launch event.</strong> Half-day virtual conference. Founder keynote, working-group reports, panel of certified vendors, analyst Q&amp;A. Recorded; clips become content for months.</span></li>
+    <li><span class="marker">F4</span><span><strong>Analyst-report cultivation.</strong> Coordinated push for inclusion in: Forrester Wave (next personalization-platform cycle), Gartner Cool Vendors (martech), IDC MarketScape. The named-vendor activity from Phase 3 is the predicate for these reports getting written.</span></li>
+    <li><span class="marker">F5</span><span><strong>v1.1 working-group kickoff.</strong> The minor-version cadence begins. Scope: refinements, additional Recommended capabilities, testing-methodology improvements. Public roadmap.</span></li>
+    <li><span class="marker">F6</span><span><strong>Multi-stakeholder governance roadmap.</strong> Public commitment to a path toward 501(c)(6) or Linux-Foundation-equivalent governance. Trigger conditions stated (e.g. ≥10 certified vendors → governance transition).</span></li>
+  </ul>
+
+  <h3>Owner and budget</h3>
+  <div class="owner-grid">
+    <div class="owner-cell"><div class="label">Primary owner</div><div class="value">Founder + editorial board + axl.org operations lead (new hire, possibly fractional)</div></div>
+    <div class="owner-cell"><div class="label">Indicative spend</div><div class="value">$40k–$80k (event production, certification process ops, sustained AR)</div></div>
+  </div>
+
+  <div class="metrics">
+    <h4>Success metrics — end of Phase 5 (week 24)</h4>
+    <ul>
+      <li>v1.0 final published with at least 5 named contributors beyond Cadence.</li>
+      <li>≥3 verified certifications issued (Cadence + ≥2 others).</li>
+      <li>≥1 first-tier analyst (Forrester / Gartner / IDC) committed to a category-naming report on a defined publication date.</li>
+      <li>"AXL" appearing in third-party RFPs at ≥5 enterprise buyers, observable through inbound mentions.</li>
+      <li>axl.org operating with a published governance roadmap and timeline to multi-stakeholder transition.</li>
+    </ul>
+  </div>
+
+  <div class="risk"><strong>Risk:</strong> a v1.0 final that ships with no certifications, no analyst commitments, and no §10.2-vendor engagement is structurally worse than a delayed v1.0. If at week 14 the metrics for Phase 4 aren't trending toward Phase 5 readiness, slip the v1.0 final by 4–6 weeks rather than ratify on a hollow base.</div>
+</section>
+
+<!-- TOTALS -->
+<section class="phase">
+  <div class="phase-header">
+    <span class="label">Aggregate</span>
+    <span class="weeks">24 weeks</span>
+  </div>
+  <h2 class="phase-title">Indicative <em>total spend</em>.</h2>
+
+  <ul class="del-list">
+    <li><span class="marker">P1</span><span><strong>Phase 1 — Foundation:</strong> $25k – $45k</span></li>
+    <li><span class="marker">P2</span><span><strong>Phase 2 — Public draft launch:</strong> $10k – $20k</span></li>
+    <li><span class="marker">P3</span><span><strong>Phase 3 — Recruitment:</strong> $30k – $60k</span></li>
+    <li><span class="marker">P4</span><span><strong>Phase 4 — Comment integration:</strong> $20k – $40k</span></li>
+    <li><span class="marker">P5</span><span><strong>Phase 5 — Ratification:</strong> $40k – $80k</span></li>
+    <li><span class="marker">∑</span><span><strong>Total over 24 weeks: $125k – $245k</strong> direct spend, plus founding-team time. Aligns with the $200k–$500k/year category-creation budget previously sized.</span></li>
+  </ul>
+
+  <p>This excludes salary cost of the founding team and any one-time costs of the axl.org legal entity formation. It also excludes the Year 2 sustaining cost — analyst relations, ongoing working-group operations, v1.x and v2.0 development — which should be planned at a similar annualized run rate.</p>
+</section>
+
+<footer class="colophon">
+  <p>This launch sequence is a planning artifact intended for internal Cadence review. Phasing, budgets, and exit criteria are subject to revision. Companion documents: <em>The AXL Reference v1.0</em>, the AXL Trademark &amp; Certification-Mark Strategy Brief, and the AXL Specification Contributor Invitation.</p>
+</footer>
+
+</main>
+</body>
+</html>

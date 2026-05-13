@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AXL Trademark & Certification-Mark Strategy Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FBFAF7;
+  --bg-alt: #F4F1EA;
+  --ink: #1A1A1A;
+  --ink-soft: #404040;
+  --ink-muted: #6B6760;
+  --accent: #1F2937;
+  --rule: #E0DCD0;
+  --rule-strong: #C8C2B2;
+  --highlight: #B04A3F;
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Inter', -apple-system, system-ui, sans-serif;
+  --mono: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: var(--sans); font-size: 15px; line-height: 1.65;
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+.page { max-width: 720px; margin: 0 auto; padding: 80px 56px 120px; }
+
+.cover { border-bottom: 1px solid var(--rule-strong); padding-bottom: 48px; margin-bottom: 56px; }
+.cover .eyebrow {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--ink-muted); margin-bottom: 24px;
+}
+.cover h1 {
+  font-family: var(--serif); font-weight: 500; font-size: 42px;
+  line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 16px;
+}
+.cover .subtitle {
+  font-family: var(--serif); font-style: italic; font-weight: 400;
+  font-size: 19px; line-height: 1.4; color: var(--ink-soft);
+  margin: 0 0 40px; max-width: 560px;
+}
+.cover dl {
+  display: grid; grid-template-columns: 140px 1fr;
+  gap: 8px 24px; font-size: 13px;
+  border-top: 1px solid var(--rule); padding-top: 24px;
+}
+.cover dt {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--ink-muted); font-weight: 500;
+}
+.cover dd { margin: 0; color: var(--ink-soft); }
+
+h2 {
+  font-family: var(--serif); font-weight: 500; font-size: 26px;
+  line-height: 1.2; letter-spacing: -0.01em;
+  margin: 64px 0 20px; padding-top: 24px;
+  border-top: 2px solid var(--ink);
+}
+h2 .num {
+  font-family: var(--mono); font-size: 12px; font-weight: 400;
+  letter-spacing: 0.05em; color: var(--ink-muted);
+  display: block; margin-bottom: 6px;
+}
+h3 {
+  font-family: var(--serif); font-weight: 500; font-size: 19px;
+  margin: 36px 0 12px; color: var(--ink);
+}
+h4 {
+  font-family: var(--sans); font-weight: 600; font-size: 12px;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent); margin: 24px 0 10px;
+}
+
+p { margin: 0 0 14px; color: var(--ink-soft); }
+p strong { color: var(--ink); font-weight: 600; }
+ul, ol { margin: 0 0 14px; padding-left: 22px; color: var(--ink-soft); }
+li { margin-bottom: 4px; }
+
+a { color: var(--accent); text-decoration: underline; text-decoration-color: var(--rule-strong); text-underline-offset: 3px; }
+
+code {
+  font-family: var(--mono); font-size: 0.86em;
+  background: var(--bg-alt); padding: 1px 5px; border-radius: 3px;
+  color: var(--ink);
+}
+
+.warning {
+  border: 1px solid var(--highlight); background: rgba(176,74,63,0.04);
+  padding: 16px 20px; margin: 24px 0; font-size: 13px;
+}
+.warning .label {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--highlight);
+  font-weight: 500; margin-bottom: 6px;
+}
+.warning p { margin: 0; color: var(--ink); font-size: 13.5px; line-height: 1.55; }
+
+.callout {
+  background: var(--bg-alt); padding: 18px 22px; margin: 20px 0;
+  border-left: 3px solid var(--accent); font-size: 14px;
+}
+.callout p:last-child { margin-bottom: 0; }
+
+.specimen {
+  font-family: var(--serif); background: var(--bg-alt);
+  padding: 16px 20px; margin: 16px 0; font-size: 14.5px;
+  line-height: 1.6; color: var(--ink); border-left: 2px solid var(--rule-strong);
+}
+
+table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 13px; }
+th, td {
+  text-align: left; padding: 10px 12px;
+  border-bottom: 1px solid var(--rule); vertical-align: top;
+}
+th {
+  font-family: var(--sans); font-weight: 600; font-size: 11px;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--accent); border-bottom: 1.5px solid var(--ink);
+}
+td { color: var(--ink-soft); }
+td strong { color: var(--ink); }
+
+.colophon {
+  margin-top: 80px; padding-top: 24px;
+  border-top: 1px solid var(--rule-strong);
+  font-size: 12px; color: var(--ink-muted);
+  font-family: var(--serif); font-style: italic;
+}
+
+@media print {
+  body { background: white; font-size: 10.5pt; }
+  .page { max-width: 100%; padding: 0; }
+  h2 { page-break-before: always; }
+  h2:first-of-type { page-break-before: auto; }
+  @page { margin: 22mm 20mm; }
+}
+@media (max-width: 700px) {
+  .page { padding: 48px 24px; }
+  .cover h1 { font-size: 32px; }
+  .cover dl { grid-template-columns: 1fr; gap: 4px; }
+  .cover dt { margin-top: 10px; }
+}
+</style>
+</head>
+<body>
+<main class="page">
+
+<header class="cover">
+  <div class="eyebrow">Strategy brief · For trademark counsel · Confidential</div>
+  <h1>AXL™ Trademark &amp;<br>Certification-Mark Strategy</h1>
+  <p class="subtitle">Filing recommendations and structural analysis for the AXL specification ecosystem.</p>
+  <dl>
+    <dt>Prepared for</dt><dd>Outside trademark counsel, Class 9 / Class 42 specialist</dd>
+    <dt>Prepared by</dt><dd>Cadence (founding sponsor, axl.org)</dd>
+    <dt>Status</dt><dd>Strategy brief — not a filing draft</dd>
+    <dt>Action requested</dt><dd>Clearance search, structural review, filing recommendation</dd>
+  </dl>
+</header>
+
+<div class="warning">
+  <div class="label">Counsel note</div>
+  <p>This document is a strategic brief intended to brief trademark counsel on the marks at issue, the structural decisions involved, and the use cases the marks must support. It is not a substitute for clearance work, opinion letters, or filing drafts. All recommendations herein are subject to counsel review and may need revision based on the results of comprehensive search.</p>
+</div>
+
+<section>
+  <h2><span class="num">§ 1</span>Executive summary</h2>
+  <p>Cadence is the founding sponsor of <strong>The AXL Reference</strong> — a published specification defining the Agentic Experience Layer category. The specification is published under CC BY 4.0 at <code>axl.org</code> and includes a certification process administered by axl.org. Two distinct marks must be cleared, filed, and structured:</p>
+  <ol>
+    <li>The wordmark <strong>AXL</strong>, used by Cadence and other vendors to describe products that implement the specification.</li>
+    <li>The <strong>AXL™ certification mark</strong>, owned by axl.org and used by certified vendors to indicate verified conformance.</li>
+  </ol>
+  <p>The longform <strong>"Agentic Experience Layer"</strong> is descriptive and is not, in our view, registrable as a trademark. It is treated as a generic phrase that any vendor in the category may use — exactly as the longform "customer data platform" sits beneath the trademarked CDP Institute and RealCDP marks.</p>
+  <p>The structural decision below — whether the wordmark and certification mark are owned by the same entity or separated — is the central question we ask counsel to weigh in on.</p>
+</section>
+
+<section>
+  <h2><span class="num">§ 2</span>The marks at issue</h2>
+
+  <h3>2.1 The wordmark — AXL</h3>
+  <p>Three-letter pronounceable acronym, intended for use in product UI, marketing collateral, technical documentation, and analyst material. Standard-character mark sought (no stylization claimed) to maximize protection scope. Stylized lockup may be filed separately at a later phase if a logo treatment is finalized.</p>
+  <div class="specimen">
+    <strong>Specimen of intended use:</strong><br>
+    "Cadence is the AXL platform for in-session personalization." · "AXL replaces the CDP-plus-personalization-plus-optimization stack." · Product UI: "Cadence — AXL Platform v1.0."
+  </div>
+
+  <h3>2.2 The certification mark — AXL™</h3>
+  <p>A separate registration as a certification mark under §1054 of the Lanham Act, used by third-party vendors to indicate that their products have been verified to conform to The AXL Reference v1.0 specification at a defined level (L1, L2, or L3 — see §6 of the Reference). Use of the mark by a vendor signifies that axl.org has certified the vendor's product against the published specification.</p>
+  <div class="specimen">
+    <strong>Specimen of intended use:</strong><br>
+    "Mutiny is AXL™ Certified — Production (L2) — v1.0" · "Platform X meets AXL™ Reference (L3) standards" · Trust-page badge: "AXL™ Certified, axl.org/certified/[vendor]."
+  </div>
+
+  <h3>2.3 The longform — "Agentic Experience Layer"</h3>
+  <p>Treated as a descriptive phrase. Not filed as a trademark. Used freely throughout the specification text and in any vendor's marketing. This is the category-naming layer of the IP strategy — the equivalent of "customer data platform" or "content delivery network."</p>
+  <div class="callout">
+    <p><strong>Strategic rationale:</strong> the most successful category-defining marks (RealCDP, OAuth, OpenAPI, MCP) have a strong wordmark + certification mark layer above a generic longform. Trying to claim the longform itself signals fragility and invites generic-use challenges. The descriptive longform is the thing we <em>want</em> the market and analysts to use without permission.</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">§ 3</span>The critical structural decision</h2>
+  <p>Under U.S. trademark law, the owner of a certification mark <em>cannot use the mark on its own goods or services</em>. A certification mark certifies that goods or services meet a standard set by someone other than the producer. This rule is foundational and inflexible.</p>
+  <p>This means: <strong>if Cadence wishes to display "AXL™ Certified" on its own product, Cadence cannot be the owner of the certification mark.</strong> The certification mark must be owned by a separate entity — naturally, axl.org, structured as a distinct legal entity (initially likely a Cadence-controlled LLC, transitioning to a 501(c)(6) or equivalent multi-stakeholder body per §12.1 of the Reference).</p>
+  <p>The recommended structure:</p>
+  <table>
+    <tr><th>Mark</th><th>Owner</th><th>Use</th><th>Rationale</th></tr>
+    <tr><td><strong>AXL</strong> (wordmark)</td><td>Cadence, Inc.</td><td>Product/marketing use; licensed to axl.org for spec/certification use</td><td>Cadence is the founding sponsor and the most active commercial user.</td></tr>
+    <tr><td><strong>AXL™</strong> (cert. mark)</td><td>axl.org (separate entity)</td><td>Vendor certification badging only</td><td>Required by §1054. Avoids the cannot-use-on-own-goods restriction for Cadence.</td></tr>
+  </table>
+  <p>An alternative — having axl.org own both marks and licensing the wordmark back to Cadence — is structurally cleaner from a governance standpoint but introduces additional licensing complexity and, depending on counsel's view, may not survive scrutiny if axl.org is not yet operating with sufficient independence from Cadence. We ask counsel to weigh in.</p>
+  <div class="callout">
+    <p><strong>Question for counsel:</strong> given that axl.org will, at the time of filing, be a Cadence-controlled entity transitioning to multi-stakeholder governance, does the structural separation outlined above survive USPTO scrutiny for the certification mark? Or is a delayed certification-mark filing (after axl.org reaches §12.1 v2.0 governance milestone) the lower-risk path?</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">§ 4</span>Goods and services language</h2>
+
+  <h3>4.1 Class 9 — Downloadable software</h3>
+  <p>Suggested ID Manual-aligned language for the wordmark filing. Counsel to refine and confirm.</p>
+  <div class="specimen">
+    Downloadable computer software for behavioral analytics, real-time visitor segmentation, and personalization of digital experiences; downloadable computer software for autonomous-agent operation of personalized website experiences; downloadable computer software for measuring lift, statistical significance, and conversion outcomes of personalized digital content; downloadable application programming interface (API) software for integration of personalization platforms with third-party systems.
+  </div>
+
+  <h3>4.2 Class 42 — SaaS and technology services</h3>
+  <div class="specimen">
+    Software as a service (SaaS) services featuring software for behavioral analytics, real-time visitor segmentation, and personalization of digital experiences; software as a service (SaaS) services featuring software for autonomous-agent operation of website and digital-experience personalization; providing temporary use of online non-downloadable software for measuring conversion lift and statistical significance of personalized digital content; technology consulting services in the field of personalization technology, behavioral analytics, and customer experience optimization; platform as a service (PaaS) featuring computer software platforms for real-time, identity-free personalization of websites.
+  </div>
+
+  <h3>4.3 Certification-mark goods and services description</h3>
+  <p>Certification marks require a description of the standard being certified, not a goods-and-services list in the traditional sense. Suggested language:</p>
+  <div class="specimen">
+    The certification mark, as used by authorized persons, certifies that the goods or services so marked have been independently verified to conform to The AXL Reference specification, a published technical standard for the Agentic Experience Layer category, at a conformance level (L1 Functional, L2 Production, or L3 Reference) published at axl.org. Certification is granted following review of the applicant's Conformance Statement, reproduction of published benchmarks under the methodology in the AXL Reference Appendix A, and inspection of the agentic-interface surface required by §7 of the specification.
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">§ 5</span>Risk and clearance considerations</h2>
+
+  <h3>5.1 Pop-culture collisions</h3>
+  <p><strong>Axl Rose / Guns N' Roses.</strong> Identical phonetic spelling. Likely irrelevant to a trademark analysis: different goods/services classes (musical performance and merchandise vs. software), no consumer confusion in the B2B martech context, and the personal name carries its own use restrictions under right-of-publicity. Worth confirming via clearance search but not expected to bar registration.</p>
+  <p><strong>Axle / vehicle parts.</strong> Phonetic similarity but different spelling and unrelated goods/services classes. Low likelihood of conflict.</p>
+  <p><strong>Comparable acronym precedent:</strong> "CDP" is registered trademark in multiple unrelated classes (Carbon Disclosure Project, computer programming entities, etc.) without any of those marks impeding the CDP Institute's "RealCDP" registration. Three-letter acronyms in non-overlapping classes generally coexist.</p>
+
+  <h3>5.2 Prior AXL marks (search required)</h3>
+  <p>USPTO TESS search required before filing. From an informal search, no obvious conflict exists in Class 9 or Class 42 for the wordmark "AXL." Counsel should:</p>
+  <ul>
+    <li>Run comprehensive U.S. clearance (USPTO TESS, common-law search, state-level TM databases).</li>
+    <li>Run EU IPO and UK IPO searches for parallel international filings.</li>
+    <li>Run domain and social-handle clearance for <code>axl.org</code>, <code>axl.dev</code>, <code>getaxl.com</code>, <code>theaxl.com</code>, plus <code>@axlspec</code> on major platforms.</li>
+  </ul>
+
+  <h3>5.3 Acronym descriptiveness and genericide risk</h3>
+  <p>Three-letter acronyms can be vulnerable to descriptiveness rejections if the letters are perceived to stand for descriptive terms. AXL standing for "Agentic Experience Layer" — all three constituent words being broadly descriptive of the category — may invite a descriptiveness inquiry. Mitigations: (a) the acronym is not the same as "AEL" (the strict acronym form), creating a degree of arbitrariness; (b) extensive use as an acquired-distinctiveness brand identifier from day one; (c) certification-mark scope is structurally protected against genericide through controlled licensing.</p>
+  <p>Genericide risk is a longer-term concern. The AXL Trademark Policy (§12.3 of the Reference) is drafted to require correct use ("AXL™ Certified," not "AXL platform") in licensed contexts. Aggressive but consistent enforcement is the long-term protection.</p>
+</section>
+
+<section>
+  <h2><span class="num">§ 6</span>Recommended filing strategy</h2>
+
+  <h3>6.1 Phase 1 — Domestic foundation (months 0–3)</h3>
+  <ul>
+    <li>U.S. wordmark filing: <strong>AXL</strong>, standard character, Cadence as owner, Class 9 + Class 42, Section 1(b) Intent to Use.</li>
+    <li>Domain and handle defensive acquisition (parallel, not waiting for filing).</li>
+    <li>Trademark policy drafted and published at <code>axl.org/trademark</code>.</li>
+  </ul>
+
+  <h3>6.2 Phase 2 — Certification mark (months 3–9)</h3>
+  <ul>
+    <li>U.S. certification-mark filing: <strong>AXL</strong>, axl.org as owner (under whichever entity structure counsel recommends), with the standard-of-certification description per §4.3 above.</li>
+    <li>Certification process documentation finalized.</li>
+    <li>First certified vendors as Statement of Use specimens.</li>
+  </ul>
+
+  <h3>6.3 Phase 3 — International expansion (months 6–18)</h3>
+  <ul>
+    <li>Madrid Protocol filings designating: EU (EUIPO), UK (UKIPO), Canada (CIPO), Australia (IP Australia), and at counsel's discretion: India, Singapore, Brazil.</li>
+    <li>Priority based on the U.S. filing date.</li>
+    <li>International strategy informed by where AXL-conformant vendors are headquartered and where major analyst firms (Gartner, Forrester) publish.</li>
+  </ul>
+
+  <h3>6.4 Phase 4 — Stylized and supplementary marks (as needed)</h3>
+  <ul>
+    <li>Stylized AXL lockup if a logotype is finalized.</li>
+    <li>"AXL Reference" as a separate wordmark covering the published specification.</li>
+    <li>Defensive filings as the category matures and as competitor activity warrants.</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="num">§ 7</span>Indicative timeline and budget</h2>
+  <p>Order-of-magnitude estimate, subject to counsel quotation and post-search complications.</p>
+  <table>
+    <tr><th>Item</th><th>Indicative cost</th><th>Indicative timeline</th></tr>
+    <tr><td>U.S. comprehensive clearance search (wordmark)</td><td>$2,500 – $4,500</td><td>2–3 weeks</td></tr>
+    <tr><td>U.S. wordmark filing, Class 9 + 42 (1(b) ITU)</td><td>$2,000 – $3,500 + USPTO fees ($500–$700)</td><td>Filing in 1 week; registration in 9–14 months</td></tr>
+    <tr><td>U.S. certification-mark filing</td><td>$3,500 – $6,000 + USPTO fees</td><td>Filing in 4 weeks; registration in 12–18 months</td></tr>
+    <tr><td>Trademark policy drafting</td><td>$5,000 – $10,000</td><td>3–4 weeks</td></tr>
+    <tr><td>Madrid Protocol international (5 jurisdictions)</td><td>$8,000 – $15,000 + WIPO + national fees</td><td>Filing in 4 weeks; registrations vary</td></tr>
+    <tr><td><strong>Phase 1 + 2 total (U.S. only)</strong></td><td><strong>~ $13,000 – $24,000</strong></td><td><strong>~ 12–18 months to registered marks</strong></td></tr>
+    <tr><td><strong>Phase 1 + 2 + 3 total (U.S. + 5 intl)</strong></td><td><strong>~ $22,000 – $40,000</strong></td><td><strong>~ 18–24 months to international portfolio</strong></td></tr>
+  </table>
+  <p>These figures exclude internal Cadence time, the cost of standing up the axl.org legal entity, and any opposition or office-action defense.</p>
+</section>
+
+<section>
+  <h2><span class="num">§ 8</span>Open questions for counsel</h2>
+  <ol>
+    <li><strong>Entity structure:</strong> the optimal legal form for axl.org at the time of certification-mark filing — Cadence-controlled LLC, separate C-corp, or 501(c)(6)? What governance evidence does USPTO expect to see?</li>
+    <li><strong>Cannot-use-on-own-goods restriction:</strong> does the recommended split ownership (Cadence owns wordmark; axl.org owns certification mark) cleanly satisfy §1054 and avoid downstream invalidation risk?</li>
+    <li><strong>Descriptiveness:</strong> what is counsel's read on the acronym-of-descriptive-phrase risk for "AXL"? Should we file additionally on the Supplemental Register as a hedge?</li>
+    <li><strong>Statement of Use timing:</strong> how aggressive should we be on launching commercial use to support the 1(b) → 1(a) conversion? Is the v1.0 specification publication itself sufficient evidence of use in commerce for Class 42?</li>
+    <li><strong>International priorities:</strong> beyond the recommended 5 jurisdictions, are there others counsel would prioritize given martech industry geography?</li>
+    <li><strong>"Agentic Experience Layer":</strong> we have proceeded on the assumption that the longform is descriptive and unregistrable. Is there a defensive filing posture worth considering — e.g., to prevent a competitor from registering it first?</li>
+  </ol>
+</section>
+
+<footer class="colophon">
+  <p>Prepared for trademark counsel review. Strategic recommendations herein are subject to counsel's clearance work, opinion-letter analysis, and filing-stage refinement. This document is not legal advice.</p>
+</footer>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #FBFAF7;
+  --color-bg-alt: #F4F1EA;
+  --color-ink: #1A1A1A;
+  --color-ink-soft: #404040;
+  --color-ink-muted: #6B6760;
+  --color-accent: #1F2937;
+  --color-rule: #E0DCD0;
+  --color-rule-strong: #C8C2B2;
+  --color-highlight: #B04A3F;
+
+  --font-serif: var(--font-fraunces), Georgia, serif;
+  --font-sans: var(--font-inter), -apple-system, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), "SF Mono", Menlo, monospace;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html, body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-ink);
+  color: var(--color-bg);
+}
+
+a { color: inherit; }
+
+@layer utilities {
+  .font-serif { font-family: var(--font-serif); }
+  .font-sans  { font-family: var(--font-sans); }
+  .font-mono  { font-family: var(--font-mono); }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-ink-muted);
+  }
+
+  .rule { border-color: var(--color-rule); }
+  .rule-strong { border-color: var(--color-rule-strong); }
+}
+
+/* DOC-PROSE — typography for spec/policy/long-form pages */
+.doc-prose {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-ink-soft);
+}
+.doc-prose p { margin: 0 0 18px; }
+.doc-prose p strong { color: var(--color-ink); font-weight: 600; }
+.doc-prose a {
+  color: var(--color-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--color-rule-strong);
+  text-underline-offset: 3px;
+}
+.doc-prose a:hover { text-decoration-color: var(--color-ink); }
+.doc-prose h2 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+  margin: 64px 0 18px;
+  padding-top: 24px;
+  border-top: 2px solid var(--color-ink);
+}
+.doc-prose h2 .num {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: var(--color-ink-muted);
+  display: block;
+  margin-bottom: 6px;
+  text-transform: none;
+}
+.doc-prose h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-ink);
+  margin: 36px 0 12px;
+}
+.doc-prose h4 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 24px 0 10px;
+}
+.doc-prose ul,
+.doc-prose ol { margin: 0 0 18px; padding-left: 22px; }
+.doc-prose li { margin-bottom: 6px; }
+.doc-prose code {
+  font-family: var(--font-mono);
+  font-size: 0.86em;
+  background: var(--color-bg-alt);
+  padding: 1px 5px;
+  border-radius: 3px;
+  color: var(--color-ink);
+}
+.doc-prose .callout {
+  background: var(--color-bg-alt);
+  border-left: 3px solid var(--color-accent);
+  padding: 18px 22px;
+  margin: 24px 0;
+  font-size: 14px;
+}
+.doc-prose .callout p:last-child { margin-bottom: 0; }
+.doc-prose .warning {
+  border: 1px solid var(--color-highlight);
+  background: rgba(176, 74, 63, 0.04);
+  padding: 16px 20px;
+  margin: 24px 0;
+  font-size: 13.5px;
+}
+.doc-prose .warning .label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-highlight);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.doc-prose .warning p { margin: 0; color: var(--color-ink); }
+.doc-prose .specimen {
+  font-family: var(--font-serif);
+  background: var(--color-bg-alt);
+  border-left: 2px solid var(--color-rule-strong);
+  padding: 16px 20px;
+  margin: 16px 0;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--color-ink);
+}
+.doc-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 13px;
+}
+.doc-prose th,
+.doc-prose td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--color-rule);
+  vertical-align: top;
+}
+.doc-prose th {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  border-bottom: 1.5px solid var(--color-ink);
+}
+.doc-prose td { color: var(--color-ink-soft); }
+.doc-prose td strong { color: var(--color-ink); }
