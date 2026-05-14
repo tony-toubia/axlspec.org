@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #FBFAF7;
-  --color-bg-alt: #F4F1EA;
+  --color-paper: #FBFAF7;
+  --color-paper-alt: #F4F1EA;
   --color-ink: #1A1A1A;
   --color-ink-soft: #404040;
   --color-ink-muted: #6B6760;
@@ -21,7 +21,7 @@
 }
 
 html, body {
-  background: var(--color-bg);
+  background: var(--color-paper);
   color: var(--color-ink);
 }
 
@@ -35,7 +35,7 @@ body {
 
 ::selection {
   background: var(--color-ink);
-  color: var(--color-bg);
+  color: var(--color-paper);
 }
 
 a { color: inherit; }
@@ -115,13 +115,13 @@ a { color: inherit; }
 .doc-prose code {
   font-family: var(--font-mono);
   font-size: 0.86em;
-  background: var(--color-bg-alt);
+  background: var(--color-paper-alt);
   padding: 1px 5px;
   border-radius: 3px;
   color: var(--color-ink);
 }
 .doc-prose .callout {
-  background: var(--color-bg-alt);
+  background: var(--color-paper-alt);
   border-left: 3px solid var(--color-accent);
   padding: 18px 22px;
   margin: 24px 0;
@@ -147,7 +147,7 @@ a { color: inherit; }
 .doc-prose .warning p { margin: 0; color: var(--color-ink); }
 .doc-prose .specimen {
   font-family: var(--font-serif);
-  background: var(--color-bg-alt);
+  background: var(--color-paper-alt);
   border-left: 2px solid var(--color-rule-strong);
   padding: 16px 20px;
   margin: 16px 0;

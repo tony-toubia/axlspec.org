@@ -46,14 +46,14 @@ export default function AspProcessPage() {
 
       <h2><span className="num">§ 3</span>Disposition log</h2>
       <p>
-        Every ASP receives a public disposition, published in <code>github.com/axl-spec/spec/blob/main/disposition-log.md</code>. The log is the most-cited artifact the working groups produce and is, by design, the place where the specification answers its critics on the record.
+        Every ASP receives a public disposition. Dispositions are recorded in <code>github.com/axl-spec/spec/blob/main/disposition-log.md</code> and are the authoritative record of substantive comment on the specification.
       </p>
 
-      <div className="callout">
-        <p>
-          <strong>Not sure where to start?</strong> Read <Link href="/spec/v1.0">v1.0 Draft</Link> end to end and note where you have direct production evidence the spec hasn&apos;t accounted for. Those are the most valuable ASPs.
-        </p>
-      </div>
+      <p className="text-ink-muted">
+        ASPs that cite production evidence not yet accounted for in the
+        specification are likely to receive the most substantive working-group
+        consideration. The current draft is at <Link href="/spec/v1.0">/spec/v1.0</Link>.
+      </p>
     </DocPage>
   );
 }

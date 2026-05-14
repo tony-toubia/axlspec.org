@@ -4,45 +4,41 @@ import { DocPage } from "@/app/components/DocPage";
 export const metadata: Metadata = {
   title: "Press & analyst",
   description:
-    "Press inquiries, analyst briefings, and embargoed materials for the AXL Reference. Founder and editorial-board availability for interviews.",
+    "Press and analyst contact information for the AXL Reference, including embargo policy and available assets.",
 };
 
 export default function PressPage() {
   return (
     <DocPage
       eyebrow="Press · Analyst"
-      title={
-        <>
-          Press &amp; <em className="italic font-normal">analyst inquiries.</em>
-        </>
-      }
-      subtitle="The editorial board and the founding sponsor are available for press interviews and analyst briefings, on or off the record, with reasonable lead time."
+      title={<>Press &amp; analyst contact.</>}
+      subtitle="Editorial-board availability for press and analyst inquiries regarding the AXL Reference and the conformance program."
       meta={[
-        { label: "Press contact", value: "press@axl.org" },
-        { label: "Analyst contact", value: "analysts@axl.org" },
-        { label: "Embargo policy", value: "48-hour notice; specimen quotes available" },
+        { label: "Press", value: "press@axl.org" },
+        { label: "Analyst", value: "analysts@axl.org" },
+        { label: "Embargo", value: "48-hour notice; standard terms" },
       ]}
     >
-      <h2><span className="num">§ 1</span>What we can speak to</h2>
-      <ul>
-        <li>The structure of the AXL Reference and the four pillars.</li>
-        <li>The state of the personalization category and the reasons the five-tool stack is structurally exhausted.</li>
-        <li>The conformance program, the certification mark, and the path to multi-stakeholder governance.</li>
-        <li>The disposition log, working-group activity, and any individual ASP that has reached disposition.</li>
-        <li>The relationship between Cadence (founding sponsor) and axl.org (steward) and why the structural separation matters.</li>
-      </ul>
+      <h2><span className="num">§ 1</span>Subject matter</h2>
+      <p>
+        Editorial-board representatives are available to speak to the structure of the
+        AXL Reference, the conformance program, the trademark policy, the governance
+        roadmap, the working-group cadence, and the disposition of received ASPs.
+      </p>
 
       <h2><span className="num">§ 2</span>Assets</h2>
+      <p>Available on request, subject to the trademark policy:</p>
       <ul>
-        <li>Founder portrait and headshots — on request.</li>
-        <li>AXL wordmark in print- and digital-resolution — on request, subject to the trademark policy.</li>
-        <li>Specimen quotes from the editorial board and the founding sponsor — supplied on embargo briefings.</li>
-        <li>Pre-publication PDF of the v1.0 Draft — supplied with 48-hour embargo agreement.</li>
+        <li>Wordmark and certification-mark artwork.</li>
+        <li>Editorial-board biographical material.</li>
+        <li>Pre-publication PDF of the current Working Draft, under embargo.</li>
       </ul>
 
-      <h2><span className="num">§ 3</span>What we won&apos;t do</h2>
+      <h2><span className="num">§ 3</span>Editorial practice</h2>
       <p>
-        We will not pre-name vendors as &ldquo;going to be certified&rdquo; before they are. We will not characterize uncertified vendors as non-conformant absent a published comparison. We will not coordinate launch coverage with any single publication exclusively.
+        axl.org does not pre-announce vendors as forthcoming certifications, does not
+        characterize uncertified vendors as non-conformant absent a published
+        comparison, and does not grant exclusive launch coverage.
       </p>
     </DocPage>
   );

@@ -11,22 +11,21 @@ export const metadata: Metadata = {
 export default function TcoPage() {
   return (
     <DocPage
-      eyebrow="Buyer's tools · § 11 · TCO"
-      title={
-        <>
-          Total cost of <em className="italic font-normal">personalization.</em>
-        </>
-      }
-      subtitle="A parameterized comparison between your current personalization stack and an AXL-conformant single layer. Designed to be printable and forwarded with an RFP."
+      eyebrow="Buyer's tools · TCO"
+      title={<>TCO methodology.</>}
+      subtitle="A reference methodology for comparing the cost of operating a coordinated multi-tool personalization stack against the cost of operating an AXL-conformant single layer at equivalent volume."
       meta={[
+        { label: "Status", value: "Methodology published; calculator forthcoming" },
         { label: "Companion", value: <Link href="/maturity">/maturity</Link> },
-        { label: "Methodology", value: <Link href="/buyers-guide">/buyers-guide</Link> },
+        { label: "Reference", value: <Link href="/buyers-guide">/buyers-guide</Link> },
       ]}
     >
       <div className="warning">
-        <div className="label">Coming with v1.0 Final</div>
+        <div className="label">Status of this document</div>
         <p>
-          The interactive calculator ships with v1.0 Final, alongside the buyer&apos;s-guide PDF. In the interim, the methodology below is published for review; the working-group inputs are open for ASP-style comment.
+          The interactive calculator is forthcoming. The methodology below is published
+          for review; comments may be filed as ASPs against the buyer&apos;s-guide
+          repository.
         </p>
       </div>
 
@@ -52,7 +51,7 @@ export default function TcoPage() {
 
       <h2><span className="num">§ 3</span>Interim worksheet</h2>
       <p>
-        A printable worksheet version is available at <code>axl.org/tco/worksheet.pdf</code>. Walk a procurement team through it in a 30-minute meeting.
+        A printable worksheet is available at <code>axl.org/tco/worksheet.pdf</code>.
       </p>
     </DocPage>
   );

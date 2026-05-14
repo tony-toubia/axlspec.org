@@ -60,7 +60,7 @@ export default function RootLayout({
       lang="en"
       className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-bg text-ink">
+      <body className="min-h-full flex flex-col bg-paper text-ink">
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />

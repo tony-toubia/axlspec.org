@@ -11,13 +11,9 @@ export const metadata: Metadata = {
 export default function BuyersGuide() {
   return (
     <DocPage
-      eyebrow="§ 11 · Buyer's guide"
-      title={
-        <>
-          The AXL <em className="italic font-normal">Buyer&apos;s Guide.</em>
-        </>
-      }
-      subtitle="Section 11 of the AXL Reference, rendered for procurement teams. Use the questions below in a vendor evaluation, an RFP, or a board memo. Designed to be the most-forwarded artifact the specification produces."
+      eyebrow="The AXL Reference · § 11"
+      title={<>Buyer&apos;s guide.</>}
+      subtitle="A procurement-facing rendering of § 11 of the AXL Reference. Provides evaluation criteria, required artifacts, and reference RFP language. Non-normative."
       meta={[
         { label: "Source", value: <Link href="/spec/v1.0#buyers-guide">§ 11 of the AXL Reference</Link> },
         { label: "Format", value: "Web rendering · printable PDF at v1.0 Final" },
@@ -31,9 +27,11 @@ export default function BuyersGuide() {
         },
       ]}
     >
-      <h2><span className="num">§ 1</span>The four questions</h2>
+      <h2><span className="num">§ 1</span>Evaluation questions</h2>
       <p>
-        Whatever the surface — RFP, demo agenda, executive evaluation — these four questions test whether a vendor is operating at AXL conformance or only adjacent to it.
+        The four questions below correspond to the four pillars in § 5 of the AXL
+        Reference. A response that does not address all four indicates a gap relative
+        to L1 conformance.
       </p>
       <ol>
         <li><strong>Does the platform collect behavioural signal identity-free at request time, or does it require a persistent identifier?</strong> (Pillar: Perceive)</li>
@@ -51,25 +49,27 @@ export default function BuyersGuide() {
         <li>A clear statement of which AXL specification version the attestation covers.</li>
       </ul>
 
-      <h2><span className="num">§ 3</span>Red flags</h2>
+      <h2><span className="num">§ 3</span>Indicators of non-conformance</h2>
       <ul>
-        <li>A vendor uses the AXL™ symbol but is not in the <Link href="/certified">certified registry</Link>.</li>
-        <li>A vendor claims &ldquo;AXL-compliant&rdquo; rather than &ldquo;AXL-conformant&rdquo; — the former is not a defined term.</li>
-        <li>A vendor cannot point to a published Conformance Statement (even at L1).</li>
-        <li>A vendor claims L3 without a public reviewer report.</li>
-        <li>The Decide capability is contingent on pre-built segments rather than session-time autonomous selection.</li>
+        <li>Use of the AXL™ symbol absent presence in the <Link href="/certified">certified registry</Link>.</li>
+        <li>Use of &ldquo;AXL-compliant&rdquo; rather than &ldquo;AXL-conformant&rdquo;: the former is not a defined term in this specification.</li>
+        <li>Absence of a published Conformance Statement at any level.</li>
+        <li>Claim of L3 conformance without a corresponding public reviewer report.</li>
+        <li>Decide capability contingent on pre-configured segments rather than session-time autonomous selection (§ 5.2).</li>
       </ul>
 
       <h2><span className="num">§ 4</span>RFP question bank</h2>
-      <div className="callout">
-        <p>
-          The published RFP question bank — 24 questions, mapped clause-by-clause to §5 — is at <code>github.com/axl-spec/buyers-guide</code>. Forkable for inclusion in a procurement document.
-        </p>
-      </div>
-
-      <h2><span className="num">§ 5</span>What this guide does not cover</h2>
       <p>
-        The guide is silent on price, on vendor financial stability, on data-residency law, and on professional-services availability. Those are procurement concerns the AXL specification does not — and should not — address. Use the standard procurement playbook for those, and use this guide for the architecture question.
+        A reference RFP question bank, mapped clause-by-clause to § 5 of the
+        specification, is published at <code>github.com/axl-spec/buyers-guide</code>{" "}
+        and may be reused in procurement documents.
+      </p>
+
+      <h2><span className="num">§ 5</span>Out of scope</h2>
+      <p>
+        This guide does not address commercial terms, vendor financial stability,
+        data-residency requirements, or professional services. Those concerns lie
+        outside the scope of the AXL Reference.
       </p>
     </DocPage>
   );

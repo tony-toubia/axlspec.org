@@ -11,27 +11,27 @@ export const metadata: Metadata = {
 export default function SpecV1() {
   return (
     <DocPage
-      eyebrow="The AXL Reference · v1.0 Draft · Public comment open"
+      eyebrow="The AXL Reference"
       title={
         <>
-          The AXL Reference
+          The AXL Reference, v1.0
           <br />
-          <em className="italic font-normal">v1.0 Draft.</em>
+          <em className="italic font-normal">Working Draft.</em>
         </>
       }
-      subtitle="An open specification for the Agentic Experience Layer — the class of personalization infrastructure that perceives, decides, renders, and learns autonomously, in session."
+      subtitle="A specification for the Agentic Experience Layer: a class of personalization system characterised by identity-free perception, autonomous in-session decisioning, real-time rendering, and continuous statistical learning."
       meta={[
-        { label: "Status", value: "Working Draft · 60-day comment open" },
+        { label: "This version", value: "axl.org/spec/v1.0" },
+        { label: "Status", value: "Working Draft" },
         { label: "Editor", value: "axl.org editorial board" },
         { label: "License", value: "CC BY 4.0" },
         { label: "Repository", value: <a href="https://github.com/axl-spec/spec">github.com/axl-spec/spec</a> },
-        { label: "Cite as", value: "axl.org/spec/v1.0" },
       ]}
     >
       <div className="warning">
-        <div className="label">Working draft</div>
+        <div className="label">Status of this document</div>
         <p>
-          This is a draft specification published for public comment. Substantive comments should be filed as <strong>AXL Specification Proposals</strong> (ASPs) against <code>github.com/axl-spec/spec</code>. The comment period runs 60 days from the publication date. Following close of comment, the editorial board will publish Release Candidates with a public disposition log for every ASP received.
+          This is a Working Draft. It is not a stable specification and may be cited only as work in progress. Comments are accepted as <strong>AXL Specification Proposals</strong> (ASPs) at <code>github.com/axl-spec/spec</code>. Each ASP receives a public disposition.
         </p>
       </div>
 
@@ -40,10 +40,10 @@ export default function SpecV1() {
         Abstract
       </h2>
       <p>
-        The AXL Reference defines the <strong>Agentic Experience Layer</strong>: a class of personalization infrastructure characterised by identity-free perception, autonomous in-session decisioning, real-time rendering, and continuous statistical learning. The specification names four required pillars, three conformance levels, an agentic interface surface that AXL-conformant systems expose to autonomous agents, and a published test methodology against which any vendor can be evaluated.
+        This document defines the <strong>Agentic Experience Layer</strong>: a class of personalization system characterised by identity-free perception, autonomous in-session decisioning, real-time rendering, and continuous statistical learning. It specifies four required pillars, three conformance levels, the interface surface a conformant implementation exposes, and the test methodology used to verify conformance.
       </p>
       <p>
-        AXL is the response to the structural exhaustion of the five-tool personalization stack — customer data platform, segmentation, A/B testing, journey orchestration, and attribution — assembled into a workflow whose integration cost has come to exceed the lift it produces. The spec is intentionally neutral as to vendor: it describes a class of system, not a product.
+        The specification is implementation-neutral. It describes the surface a conformant system exposes; it does not prescribe model architectures, hosting topology, or pricing.
       </p>
 
       <h2 id="introduction">
@@ -51,10 +51,10 @@ export default function SpecV1() {
         Introduction
       </h2>
       <p>
-        Personalization, as practiced for the last fifteen years, has been a workflow problem: a marketer constructs a segment, attaches a treatment, runs an experiment, attributes outcomes, then iterates. Each step requires a different tool, a different schema, and a different operator. AXL describes the architecture that collapses the workflow into a single layer: <strong>one system that observes a visitor in the moment, decides what to show them, renders it, and updates its decisioning model from the outcome</strong>.
+        Personalization, as currently practiced, is typically assembled from several discrete systems: a customer data platform, a segmentation tool, an A/B-testing tool, a journey orchestrator, and an attribution surface. Each operates on a separate schema and is configured by a separate operator.
       </p>
       <p>
-        The category needs a name because buyers, analysts, and procurement teams need a name. "Personalization" is a feature class; "agentic experience layer" is an architecture class. The distinction matters in RFPs.
+        This document specifies an alternative architecture in which the four functions of <em>perceive</em>, <em>decide</em>, <em>render</em>, and <em>learn</em> are operated as a single in-session layer. The category name &mdash; the Agentic Experience Layer &mdash; is descriptive and is intentionally distinct from any product name.
       </p>
 
       <h2 id="scope">
@@ -103,7 +103,7 @@ export default function SpecV1() {
         The four pillars
       </h2>
       <p>
-        An AXL-conformant system implements all four. Anything less is a component, not a layer. Each pillar has Required and Recommended capabilities; L1 conformance requires Required-level implementation of all four, L3 requires Recommended-level.
+        A conformant implementation provides all four pillars. Each pillar has Required and Recommended capabilities. L1 conformance requires Required-level implementation across all four pillars; L3 conformance requires Recommended-level implementation across all four.
       </p>
 
       <h3 id="pillar-perceive">5.1 Perceive</h3>
@@ -172,7 +172,7 @@ export default function SpecV1() {
         AXL-conformant systems expose a minimum interface against which autonomous agents, third-party orchestrators, and conformance test harnesses operate. The surface is normative. The bindings (HTTP/JSON, WebSocket, MCP, etc.) are illustrative; vendors may implement any binding that satisfies the semantic surface described here.
       </p>
       <div className="callout">
-        <p><strong>Working-draft note:</strong> §7 is the part of the spec we expect the most ASPs against. Production teams operating personalization at scale have strong opinions about idempotency, retry semantics, and treatment-cache invalidation. We welcome them.</p>
+        <p><strong>Editorial note.</strong> § 7 is expected to evolve through the comment period. Implementers with production experience of idempotency, retry semantics, and treatment-cache invalidation are encouraged to file ASPs.</p>
       </div>
 
       <h2 id="interop">
@@ -196,11 +196,8 @@ export default function SpecV1() {
         Reference landscape
       </h2>
       <p>
-        §10.1 names the architectural patterns we observe in the market today. §10.2 names specific platforms whose architecture overlaps with one or more AXL pillars, and identifies which pillars each platform satisfies and which would need to evolve to claim full conformance. Naming is structural, not adversarial.
+        § 10.1 enumerates the architectural patterns in current commercial use. § 10.2 lists specific platforms whose architecture overlaps with one or more pillars of this specification and indicates, per pillar, the conformance gap. Listings are structural and non-normative; corrections may be filed as ASPs.
       </p>
-      <div className="callout">
-        <p>Named vendors are invited to engage via working groups, ASPs, or Conformance Statements. The full disposition log is on GitHub. Vendors who believe their platform has been mischaracterized are encouraged to correct the record on the public log.</p>
-      </div>
 
       <h2 id="buyers-guide">
         <span className="num">§ 11</span>
@@ -226,11 +223,12 @@ export default function SpecV1() {
         Appendix A defines the published benchmarks against which L2 attestations and L3 verifications are evaluated: signal-collection accuracy, decisioning latency budget, render-substitution timing, and learn-loop statistical correctness. Executable artifacts are published at <code>github.com/axl-spec/conformance-tests</code>.
       </p>
 
-      <div className="callout">
-        <p>
-          <strong>Next steps —</strong> file an ASP on GitHub, join a working group at <Link href="/working-groups">/working-groups</Link>, or attest at L1/L2 by publishing a Conformance Statement at <Link href="/certification">/certification</Link>.
-        </p>
-      </div>
+      <p className="text-ink-muted">
+        Comments on this draft should be filed as ASPs at{" "}
+        <code>github.com/axl-spec/spec</code>. Working-group activity is published at{" "}
+        <Link href="/working-groups">/working-groups</Link>; the Conformance Statement process is documented at{" "}
+        <Link href="/certification">/certification</Link>.
+      </p>
     </DocPage>
   );
 }

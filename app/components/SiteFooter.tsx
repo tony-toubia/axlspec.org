@@ -38,7 +38,7 @@ const COLUMNS: { heading: string; links: { href: string; label: string }[] }[] =
 
 export function SiteFooter() {
   return (
-    <footer className="border-t rule-strong mt-32 bg-bg-alt/40">
+    <footer className="border-t rule-strong mt-32 bg-paper-alt/40">
       <div className="mx-auto max-w-[1180px] px-6 sm:px-10 py-16">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-10">
           <div className="col-span-2 md:col-span-1">

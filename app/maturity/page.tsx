@@ -65,24 +65,20 @@ const TIERS = [
 export default function MaturityPage() {
   return (
     <DocPage
-      eyebrow="Specification · § 9 · Maturity Model"
-      title={
-        <>
-          Where is your stack on the <em className="italic font-normal">maturity curve?</em>
-        </>
-      }
-      subtitle="The model classifies operator capability, not vendor capability. Buyers locate themselves on the curve; vendors demonstrate which tiers their platform supports. Use this page in vendor evaluation, board reporting, or as a procurement pre-read."
+      eyebrow="The AXL Reference · § 9"
+      title={<>Maturity model.</>}
+      subtitle="A five-tier classification of operator capability in personalization. Distinct from vendor capability, which is addressed separately by the conformance levels in § 6."
       meta={[
-        { label: "Audience", value: "Buyers, procurement, RevOps leads" },
-        { label: "Normative", value: "§ 9 of the AXL Reference v1.0" },
+        { label: "Source", value: "§ 9 of the AXL Reference v1.0" },
         { label: "Companion", value: <Link href="/spec/v1.0#maturity">§ 9 of the spec</Link> },
       ]}
     >
       <p>
-        Most personalization teams sit at <strong>M1</strong>. The five-tool stack is integrated; workflows exist; operators have learned to coordinate the tools. The cost of this integration — measured in headcount, vendor spend, and time-to-experiment — is what AXL describes as &ldquo;structurally exhausted.&rdquo;
-      </p>
-      <p>
-        <strong>M2</strong> is where most teams aspiring to consolidate are aiming. <strong>M3</strong> is the threshold at which AXL conformance becomes attainable. <strong>M4</strong> is verified, certified, AXL™-marked.
+        The maturity model classifies the operating environment in which a personalization
+        capability is exercised, ranging from a coordinated stack of discrete tools (M1) to
+        a verified-conformant single-layer implementation (M4). A given vendor product may
+        support deployments at multiple tiers; operators may sit at one tier while
+        evaluating an architecture more typical of another.
       </p>
 
       <h2><span className="num">§ 9.1</span>Five tiers</h2>
@@ -102,28 +98,30 @@ export default function MaturityPage() {
         </section>
       ))}
 
-      <h2><span className="num">§ 9.2</span>How to use this model</h2>
+      <h2><span className="num">§ 9.2</span>Use of the model</h2>
 
-      <h3>Buyers</h3>
+      <h3>Buyers and procurement</h3>
       <p>
-        Locate yourself honestly. The most expensive mistake in personalization is shopping for an M3 capability while operating at M1. Vendors selling M3 platforms generally require an M2 operator to extract the lift. Read <Link href="/buyers-guide">/buyers-guide</Link> for the procurement-language version of this point.
+        The model is intended for use in vendor evaluation and procurement pre-reads. The
+        operator&apos;s current tier informs the type of capability that will produce
+        marginal value; a buyer evaluating a platform whose typical deployment is at a
+        higher tier than the operator currently occupies should evaluate the gap
+        explicitly. See <Link href="/buyers-guide">/buyers-guide</Link>.
       </p>
 
       <h3>Vendors</h3>
       <p>
-        Publish the maturity tier you support. If your platform serves operators at M1 well but does not support an M3 deployment, say so. AXL is not a stack-rank: M2 platforms are valuable, often necessary, and not made less so by the existence of M3.
+        Vendors may indicate the tier or tiers at which their platform is typically
+        deployed. The model is not a stack-rank: platforms supporting M1 or M2
+        deployments are not made less useful by the existence of M3.
       </p>
 
       <h3>Analysts</h3>
       <p>
-        The maturity tiers map onto, but do not reduce to, the §10 reference landscape. The intent is to give analyst reports a vocabulary that is precise about <em>operator capability</em> separately from <em>vendor capability</em>, which the current category language does not.
+        The tiers in this section are distinct from the architectural patterns
+        enumerated in § 10. The intent of the model is to provide a vocabulary for
+        operator capability separately from vendor capability.
       </p>
-
-      <div className="callout">
-        <p>
-          <strong>Self-locate in 60 seconds:</strong> a printable single-page worksheet is at <code>axl.org/maturity/worksheet</code>. The buyer&apos;s-guide TCO calculator at <Link href="/tco">/tco</Link> uses this model to estimate the cost differential between your current tier and the next.
-        </p>
-      </div>
     </DocPage>
   );
 }

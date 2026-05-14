@@ -11,17 +11,13 @@ export const metadata: Metadata = {
 export default function CertificationPage() {
   return (
     <DocPage
-      eyebrow="Certification · AXL™"
-      title={
-        <>
-          AXL™ <em className="italic font-normal">Certification.</em>
-        </>
-      }
-      subtitle="The AXL™ certification mark is owned and administered by axl.org. Vendors who pass verified L3 review may license the mark for use on the certified product, for the certified specification version, under the trademark policy."
+      eyebrow="AXL™ Certification"
+      title={<>Certification process.</>}
+      subtitle="Conditions under which the AXL™ certification mark is licensed to a vendor. L3 review is conducted by axl.org against the published specification."
       meta={[
-        { label: "Process opens", value: "v1.0 Final · week 16 of the launch sequence" },
-        { label: "Reviewer panel", value: "axl.org editorial + invited external reviewers" },
-        { label: "Mark owner", value: "axl.org (separate from any vendor)" },
+        { label: "Programme status", value: "Verified L3 review opens at v1.0 Final" },
+        { label: "Reviewer panel", value: "axl.org editorial board, plus rotating external reviewer" },
+        { label: "Mark owner", value: "axl.org" },
         { label: "Policy", value: <Link href="/trademark">axl.org/trademark</Link> },
       ]}
     >
@@ -99,11 +95,10 @@ export default function CertificationPage() {
         The reviewer roster, reviewer reports, and revocations are public. axl.org publishes an annual transparency report including certifications issued, revocations, and aggregate working-group contribution metrics.
       </p>
 
-      <div className="callout">
-        <p>
-          <strong>Starting the process:</strong> while verified certification opens at v1.0 Final, prospective certified vendors are encouraged to file L1 and L2 self-attestations against the v1.0 Draft now. Doing so positions the vendor for accelerated L3 review at v1.0 Final.
-        </p>
-      </div>
+      <p className="text-ink-muted">
+        L1 and L2 self-attestations may be filed against the current Working Draft.
+        L3 review is conducted against published versions of the specification.
+      </p>
     </DocPage>
   );
 }

@@ -4,151 +4,163 @@ const PILLARS = [
   {
     num: "01",
     name: "Perceive",
-    summary:
-      "Identity-free behavioral signal collection. Session-level state without persistent profiles.",
+    summary: "Collection of behavioural signal from the live session, without persistent identifiers as a requirement.",
   },
   {
     num: "02",
     name: "Decide",
-    summary:
-      "Autonomous agent selection of treatment, content, and journey — at request time, on first visit, without rules.",
+    summary: "Selection of treatment, content, and journey by an autonomous agent at request time.",
   },
   {
     num: "03",
     name: "Render",
-    summary:
-      "Real-time substitution of page content, copy, and component state — flicker-free, framework-agnostic.",
+    summary: "Substitution of selected treatment into the rendered experience, framework-agnostic and flicker-free.",
   },
   {
     num: "04",
     name: "Learn",
-    summary:
-      "Continuous, in-session feedback loops with statistical significance reporting and lift measurement.",
+    summary: "Continuous update of the decisioning model from observed outcomes, with statistical-significance reporting.",
   },
 ];
 
-const PRINCIPLES = [
-  { k: "Open", v: "Published under CC BY 4.0. Implementable by any vendor." },
-  { k: "Vendor-neutral", v: "Cadence is the founding sponsor; the spec is not Cadence." },
-  { k: "Conformance-driven", v: "L1 Functional, L2 Production, L3 Reference — earned, not claimed." },
-  { k: "Multi-stakeholder", v: "Path to 501(c)(6) governance at ≥10 certified vendors." },
+const LEVELS = [
+  {
+    level: "L1",
+    name: "Functional",
+    desc: "Required clauses of §5; self-attested via published Conformance Statement.",
+  },
+  {
+    level: "L2",
+    name: "Production",
+    desc: "L1 plus published reproduction of Appendix A benchmarks.",
+  },
+  {
+    level: "L3",
+    name: "Reference",
+    desc: "Verified review by axl.org against Required and Recommended clauses. Prerequisite for use of the AXL™ certification mark.",
+  },
 ];
 
 export default function Home() {
   return (
     <>
-      {/* HERO */}
+      {/* HERO — quieter, spec-document register */}
       <section className="border-b rule-strong">
-        <div className="mx-auto max-w-[1180px] px-6 sm:px-10 pt-20 pb-24">
-          <p className="eyebrow">v1.0 Draft · Public comment open</p>
+        <div className="mx-auto max-w-[1180px] px-6 sm:px-10 pt-20 pb-20">
+          <p className="eyebrow">The AXL Reference · v1.0 Draft</p>
 
-          <h1 className="mt-6 font-serif font-medium text-[clamp(40px,7vw,80px)] leading-[1.02] tracking-[-0.02em] text-ink max-w-[18ch]">
-            The <em className="italic font-normal">Agentic</em>
+          <h1 className="mt-6 font-serif font-medium text-[clamp(38px,6.5vw,72px)] leading-[1.05] tracking-[-0.02em] text-ink max-w-[20ch]">
+            An open specification for the
             <br />
-            Experience Layer.
+            <em className="italic font-normal">Agentic Experience Layer.</em>
           </h1>
 
-          <p className="mt-8 font-serif italic text-[19px] sm:text-[22px] leading-[1.5] text-ink-soft max-w-[58ch]">
-            AXL is the open specification for personalization infrastructure
-            that perceives, decides, renders, and learns — autonomously, in
-            session, without the five-tool stack.
+          <p className="mt-8 font-serif text-[18px] sm:text-[20px] leading-[1.55] text-ink-soft max-w-[62ch]">
+            This document defines a class of personalization infrastructure characterised
+            by four required pillars — perceive, decide, render, learn — and three
+            conformance levels. Stewarded by axl.org. Published under CC BY 4.0.
           </p>
 
           <div className="mt-12 flex flex-wrap gap-3">
             <Link
               href="/spec/v1.0"
-              className="font-mono text-[12px] tracking-[0.10em] uppercase bg-ink text-bg px-5 py-3 hover:bg-highlight transition-colors"
+              className="font-mono text-[12px] tracking-[0.10em] uppercase bg-ink text-paper px-5 py-3 hover:bg-highlight transition-colors"
             >
-              Read the v1.0 Draft →
+              Read v1.0 Draft
             </Link>
             <Link
               href="/conformance"
-              className="font-mono text-[12px] tracking-[0.10em] uppercase border border-ink text-ink px-5 py-3 hover:bg-ink hover:text-bg transition-colors"
+              className="font-mono text-[12px] tracking-[0.10em] uppercase border border-ink text-ink px-5 py-3 hover:bg-ink hover:text-paper transition-colors"
             >
-              Conformance Levels
-            </Link>
-            <Link
-              href="https://github.com/axl-spec"
-              className="font-mono text-[12px] tracking-[0.10em] uppercase border border-rule-strong text-ink-soft px-5 py-3 hover:border-ink hover:text-ink transition-colors"
-            >
-              github.com/axl-spec
+              Conformance
             </Link>
           </div>
 
-          <dl className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-6 max-w-3xl text-[13px] border-t rule pt-8">
+          <dl className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-6 max-w-4xl text-[13px] border-t rule pt-8">
             <div>
               <dt className="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-muted">Status</dt>
-              <dd className="mt-1 text-ink-soft">v1.0 Draft · Open for ASPs</dd>
+              <dd className="mt-1 text-ink-soft">Working Draft</dd>
+            </div>
+            <div>
+              <dt className="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-muted">This version</dt>
+              <dd className="mt-1 text-ink-soft">v1.0 Draft · axl.org/spec/v1.0</dd>
+            </div>
+            <div>
+              <dt className="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-muted">Comment</dt>
+              <dd className="mt-1 text-ink-soft">Open. ASPs accepted on GitHub.</dd>
             </div>
             <div>
               <dt className="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-muted">License</dt>
               <dd className="mt-1 text-ink-soft">CC BY 4.0</dd>
             </div>
-            <div>
-              <dt className="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-muted">Comment period</dt>
-              <dd className="mt-1 text-ink-soft">60 days from launch</dd>
-            </div>
-            <div>
-              <dt className="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-muted">Steward</dt>
-              <dd className="mt-1 text-ink-soft">axl.org</dd>
-            </div>
           </dl>
         </div>
       </section>
 
-      {/* WHAT IT IS */}
+      {/* ABSTRACT — clinical, no rhetoric */}
       <section className="border-b rule">
-        <div className="mx-auto max-w-[1180px] px-6 sm:px-10 py-24 grid md:grid-cols-[1fr_2fr] gap-12">
-          <div>
-            <p className="eyebrow">§ 01</p>
-            <h2 className="mt-4 font-serif text-[32px] leading-[1.15] tracking-[-0.01em]">
-              A category, <em className="italic font-normal">precisely named.</em>
-            </h2>
-          </div>
-          <div className="font-serif text-[17px] leading-[1.7] text-ink-soft space-y-5 max-w-[58ch]">
+        <div className="mx-auto max-w-[1180px] px-6 sm:px-10 py-20 grid md:grid-cols-[200px_1fr] gap-10">
+          <p className="eyebrow self-start">Abstract</p>
+          <div className="font-serif text-[16.5px] leading-[1.75] text-ink-soft space-y-4 max-w-[62ch]">
             <p>
-              The five-tool personalization stack — <strong className="text-ink">CDP plus segmentation plus A/B plus journey plus attribution</strong> — is structurally exhausted. Buyers feel it; analysts are starting to write about it. AXL describes the architecture that replaces it.
+              The AXL Reference defines the Agentic Experience Layer: a class of
+              personalization system characterised by identity-free perception,
+              autonomous in-session decisioning, real-time rendering, and continuous
+              statistical learning.
             </p>
             <p>
-              The Agentic Experience Layer is not a product. It is a class of system: identity-free, in-session, autonomously decisioned, continuously learning. The AXL Reference defines the four pillars, the conformance levels, the test methodology, and the language a buyer can use in an RFP.
+              The specification is implementation-neutral. It describes the surface a
+              conformant system exposes, the conformance levels at which it may be
+              evaluated, and the test methodology used to verify them. It does not
+              prescribe model architectures, hosting topology, or pricing.
             </p>
             <p>
-              <strong className="text-ink">The longform is descriptive.</strong> &ldquo;Agentic Experience Layer&rdquo; is a category, the way &ldquo;customer data platform&rdquo; is a category. Anyone can use it. The wordmark <strong className="text-ink">AXL</strong> is owned by Cadence; the certification mark <strong className="text-ink">AXL™</strong> is administered by axl.org and earned through verified conformance.
+              The wordmark <strong className="text-ink">AXL</strong> is owned by
+              Cadence, Inc. The certification mark <strong className="text-ink">AXL™</strong>{" "}
+              is owned and administered by axl.org and is used by certified vendors
+              under the <Link href="/trademark" className="underline decoration-rule-strong underline-offset-[3px] hover:decoration-ink">trademark policy</Link>.
+              The descriptive longform &ldquo;Agentic Experience Layer&rdquo; is not registered
+              and is free for any party to use.
             </p>
           </div>
         </div>
       </section>
 
-      {/* FOUR PILLARS */}
+      {/* FOUR PILLARS — neutral summaries */}
       <section className="border-b rule">
-        <div className="mx-auto max-w-[1180px] px-6 sm:px-10 py-24">
-          <div className="max-w-[680px]">
-            <p className="eyebrow">§ 02 · The four pillars</p>
-            <h2 className="mt-4 font-serif text-[36px] sm:text-[44px] leading-[1.1] tracking-[-0.015em]">
-              Perceive. Decide. <em className="italic font-normal">Render. Learn.</em>
-            </h2>
-            <p className="mt-6 font-serif italic text-[17px] text-ink-soft leading-[1.6]">
-              An AXL-conformant system implements all four. Anything less is a component, not a layer.
+        <div className="mx-auto max-w-[1180px] px-6 sm:px-10 py-20">
+          <div className="grid md:grid-cols-[200px_1fr] gap-10">
+            <div>
+              <p className="eyebrow">§ 5</p>
+              <h2 className="mt-3 font-serif text-[26px] tracking-[-0.01em] leading-[1.2]">
+                The four pillars.
+              </h2>
+            </div>
+            <p className="font-serif text-[16.5px] leading-[1.75] text-ink-soft max-w-[58ch]">
+              A conformant implementation provides all four pillars. Each pillar has
+              Required and Recommended capabilities. L1 conformance requires
+              Required-level across all four; L3 requires Recommended-level across
+              all four.
             </p>
           </div>
 
-          <div className="mt-16 grid sm:grid-cols-2 gap-x-12 gap-y-12">
+          <div className="mt-14 grid sm:grid-cols-2 gap-x-10 gap-y-10">
             {PILLARS.map((p) => (
-              <div key={p.num} className="border-t-2 border-ink pt-6">
+              <div key={p.num} className="border-t-2 border-ink pt-5">
                 <p className="font-mono text-[11px] tracking-[0.10em] text-ink-muted">
-                  {p.num}
+                  § 5.{p.num.slice(1)}
                 </p>
-                <h3 className="mt-2 font-serif text-[28px] tracking-[-0.01em] text-ink">
+                <h3 className="mt-2 font-serif text-[24px] tracking-[-0.01em] text-ink">
                   {p.name}
                 </h3>
-                <p className="mt-3 font-sans text-[14.5px] leading-[1.65] text-ink-soft">
+                <p className="mt-2 font-sans text-[14.5px] leading-[1.65] text-ink-soft">
                   {p.summary}
                 </p>
                 <Link
                   href={`/spec/v1.0#pillar-${p.name.toLowerCase()}`}
-                  className="mt-4 inline-block font-mono text-[11px] tracking-[0.08em] uppercase text-ink underline decoration-rule-strong underline-offset-[3px] hover:decoration-ink"
+                  className="mt-3 inline-block font-mono text-[11px] tracking-[0.08em] uppercase text-ink-muted hover:text-ink underline decoration-rule-strong underline-offset-[3px] hover:decoration-ink"
                 >
-                  § 5 — Pillar definition
+                  Read § 5.{p.num.slice(1)}
                 </Link>
               </div>
             ))}
@@ -156,135 +168,73 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONFORMANCE PREVIEW */}
-      <section className="border-b rule bg-bg-alt/50">
-        <div className="mx-auto max-w-[1180px] px-6 sm:px-10 py-24 grid md:grid-cols-3 gap-10">
-          <div className="md:col-span-1">
-            <p className="eyebrow">§ 03 · Conformance</p>
-            <h2 className="mt-4 font-serif text-[32px] leading-[1.15] tracking-[-0.01em]">
-              Three levels.<br />
-              <em className="italic font-normal">Earned, not claimed.</em>
+      {/* CONFORMANCE — restrained, no marketing framing */}
+      <section className="border-b rule">
+        <div className="mx-auto max-w-[1180px] px-6 sm:px-10 py-20 grid md:grid-cols-[200px_1fr] gap-10">
+          <div>
+            <p className="eyebrow">§ 6</p>
+            <h2 className="mt-3 font-serif text-[26px] tracking-[-0.01em] leading-[1.2]">
+              Conformance levels.
             </h2>
-            <p className="mt-6 text-[14.5px] text-ink-soft leading-[1.65]">
-              A vendor may attest at L1 or L2 via a public Conformance Statement. L3 requires verified review and is the prerequisite for the AXL™ mark.
-            </p>
-            <Link
-              href="/conformance"
-              className="mt-6 inline-block font-mono text-[11px] tracking-[0.10em] uppercase text-ink underline decoration-rule-strong underline-offset-[4px] hover:decoration-ink"
-            >
-              Conformance methodology →
-            </Link>
           </div>
 
-          <div className="md:col-span-2 space-y-6">
-            {[
-              {
-                level: "L1",
-                name: "Functional",
-                desc: "Implements all four pillars at a Required level. Self-attested via published Conformance Statement.",
-              },
-              {
-                level: "L2",
-                name: "Production",
-                desc: "L1 plus published reproduction of Appendix A benchmarks under the AXL test methodology. Self-attested with audit-ready artifacts.",
-              },
-              {
-                level: "L3",
-                name: "Reference",
-                desc: "Verified by axl.org review against the full specification including all Recommended capabilities. Required for use of the AXL™ certification mark.",
-              },
-            ].map((row) => (
+          <div className="space-y-5 max-w-[680px]">
+            {LEVELS.map((row) => (
               <div
                 key={row.level}
-                className="bg-bg border rule-strong p-6 sm:p-7 grid grid-cols-[60px_1fr] gap-6"
+                className="grid grid-cols-[60px_1fr] gap-6 py-4 border-b rule"
               >
-                <p className="font-mono text-[13px] tracking-[0.08em] text-highlight font-medium">
+                <p className="font-mono text-[13px] tracking-[0.08em] text-ink font-medium">
                   {row.level}
                 </p>
                 <div>
-                  <h3 className="font-serif text-[20px] text-ink">{row.name}</h3>
-                  <p className="mt-2 text-[14px] text-ink-soft leading-[1.6]">
+                  <h3 className="font-serif text-[19px] text-ink">{row.name}</h3>
+                  <p className="mt-1.5 text-[14px] text-ink-soft leading-[1.6]">
                     {row.desc}
                   </p>
                 </div>
               </div>
             ))}
+
+            <div className="pt-2">
+              <Link
+                href="/conformance"
+                className="font-mono text-[11px] tracking-[0.10em] uppercase text-ink underline decoration-rule-strong underline-offset-[4px] hover:decoration-ink"
+              >
+                § 6 — Conformance methodology
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* PRINCIPLES */}
-      <section className="border-b rule">
-        <div className="mx-auto max-w-[1180px] px-6 sm:px-10 py-24">
-          <p className="eyebrow">§ 04 · How this works</p>
-          <h2 className="mt-4 font-serif text-[32px] tracking-[-0.01em] max-w-[20ch] leading-[1.15]">
-            An open specification, stewarded in the open.
-          </h2>
-
-          <dl className="mt-12 grid sm:grid-cols-2 md:grid-cols-4 gap-6">
-            {PRINCIPLES.map((p) => (
-              <div key={p.k} className="border-t-2 border-ink pt-5">
-                <dt className="font-sans font-semibold text-[12px] tracking-[0.06em] uppercase text-accent">
-                  {p.k}
-                </dt>
-                <dd className="mt-2 text-[14px] text-ink-soft leading-[1.6]">
-                  {p.v}
-                </dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-      </section>
-
-      {/* CTA STRIP */}
+      {/* CONTENTS — a single, minimal navigation block, no audience-tiered marketing */}
       <section>
-        <div className="mx-auto max-w-[1180px] px-6 sm:px-10 py-24">
-          <div className="grid md:grid-cols-3 gap-6">
-            <Link
-              href="/spec/v1.0"
-              className="group border rule-strong bg-bg p-8 hover:border-ink transition-colors"
-            >
-              <p className="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-muted">
-                For implementers
-              </p>
-              <p className="mt-3 font-serif text-[22px] leading-[1.25] text-ink">
-                Read the v1.0 Draft specification.
-              </p>
-              <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.10em] text-ink group-hover:text-highlight">
-                axl.org/spec/v1.0 →
-              </p>
-            </Link>
-
-            <Link
-              href="/maturity"
-              className="group border rule-strong bg-bg p-8 hover:border-ink transition-colors"
-            >
-              <p className="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-muted">
-                For buyers
-              </p>
-              <p className="mt-3 font-serif text-[22px] leading-[1.25] text-ink">
-                Locate your stack on the maturity model.
-              </p>
-              <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.10em] text-ink group-hover:text-highlight">
-                axl.org/maturity →
-              </p>
-            </Link>
-
-            <Link
-              href="/working-groups"
-              className="group border rule-strong bg-bg p-8 hover:border-ink transition-colors"
-            >
-              <p className="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-muted">
-                For vendors
-              </p>
-              <p className="mt-3 font-serif text-[22px] leading-[1.25] text-ink">
-                Join a working group. File an ASP.
-              </p>
-              <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.10em] text-ink group-hover:text-highlight">
-                axl.org/working-groups →
-              </p>
-            </Link>
-          </div>
+        <div className="mx-auto max-w-[1180px] px-6 sm:px-10 py-20">
+          <p className="eyebrow">Contents</p>
+          <ul className="mt-6 grid sm:grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-2 max-w-[860px] text-[14px]">
+            {[
+              ["/spec/v1.0", "The AXL Reference v1.0"],
+              ["/glossary", "§ 3 — Terminology"],
+              ["/maturity", "§ 9 — Maturity model"],
+              ["/conformance", "§ 6 — Conformance"],
+              ["/certification", "Certification process"],
+              ["/trademark", "Trademark policy"],
+              ["/working-groups", "Working groups"],
+              ["/asp-process", "ASP process"],
+              ["/governance", "Governance roadmap"],
+            ].map(([href, label]) => (
+              <li key={href} className="py-1.5 border-b rule">
+                <Link
+                  href={href}
+                  className="text-ink-soft hover:text-ink underline decoration-transparent hover:decoration-rule-strong underline-offset-[3px] flex justify-between"
+                >
+                  <span>{label}</span>
+                  <span className="font-mono text-[11px] text-ink-muted">{href}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
     </>

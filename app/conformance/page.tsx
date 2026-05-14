@@ -98,12 +98,11 @@ export default function ConformancePage() {
         An implementer may withdraw a Conformance Statement at any time by opening a withdrawal PR. axl.org may revoke an L3 certification on the public record where the reviewer panel determines the implementation has materially diverged from the attested state. Revocation triggers the trademark-use cure period described in <Link href="/trademark">§4 of the trademark policy</Link>.
       </p>
 
-      <div className="callout">
-        <p>
-          <strong>Ready to attest? </strong>
-          File an L1 or L2 Conformance Statement against the v1.0 Draft on GitHub, or contact the editorial board at <code>conformance@axl.org</code> to initiate L3 review at v1.0 Final.
-        </p>
-      </div>
+      <p className="text-ink-muted">
+        L1 and L2 Conformance Statements may be filed against the current Working
+        Draft. L3 review is conducted against published versions. The editorial
+        contact for the certification programme is <code>conformance@axl.org</code>.
+      </p>
     </DocPage>
   );
 }

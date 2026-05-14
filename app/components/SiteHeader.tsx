@@ -10,7 +10,7 @@ const NAV = [
 
 export function SiteHeader() {
   return (
-    <header className="border-b rule sticky top-0 z-30 bg-bg/85 backdrop-blur supports-[backdrop-filter]:bg-bg/70">
+    <header className="border-b rule sticky top-0 z-30 bg-paper/85 backdrop-blur supports-[backdrop-filter]:bg-paper/70">
       <div className="mx-auto max-w-[1180px] px-6 sm:px-10 py-4 flex items-center justify-between gap-6">
         <Link
           href="/"
@@ -37,7 +37,7 @@ export function SiteHeader() {
 
         <Link
           href="/spec/v1.0"
-          className="font-mono text-[11px] tracking-[0.12em] uppercase border border-ink text-ink px-3 py-2 hover:bg-ink hover:text-bg transition-colors"
+          className="font-mono text-[11px] tracking-[0.12em] uppercase border border-ink text-ink px-3 py-2 hover:bg-ink hover:text-paper transition-colors"
         >
           Read v1.0 →
         </Link>

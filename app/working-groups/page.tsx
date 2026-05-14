@@ -49,13 +49,9 @@ const GROUPS = [
 export default function WorkingGroupsPage() {
   return (
     <DocPage
-      eyebrow="Community · Working groups"
-      title={
-        <>
-          Five working groups. <em className="italic font-normal">Open seats.</em>
-        </>
-      }
-      subtitle="The specification evolves through working groups, one per pillar plus governance. Seats are open by self-nomination. Working-group contributions are credited in the editorial section of subsequent specification versions."
+      eyebrow="Working groups"
+      title={<>Working groups.</>}
+      subtitle="Five public-record bodies — one per pillar plus governance — that evolve the AXL Reference. Seats are open. Contributions are credited in the editorial section of subsequent specification versions."
       meta={[
         { label: "Charter", value: <Link href="/spec/v1.0#governance">§ 12.1 of the AXL Reference</Link> },
         { label: "Calendar", value: <a href="https://github.com/axl-spec">github.com/axl-spec</a> },
@@ -115,11 +111,11 @@ export default function WorkingGroupsPage() {
         Working-group contributors are credited by name in the editorial section of every specification version they helped shape. Substantive ASP authors are listed in the disposition log. Cited reviewer reports for L3 certifications credit the working-group reviewer panel.
       </p>
 
-      <div className="callout">
-        <p>
-          <strong>For named vendors</strong> in §10.2 of the spec — Mutiny, Dynamic Yield, Optimizely, Adobe Target, Klaviyo, Braze — the working group corresponding to your strongest pillar is the recommended entry point. If you believe the specification mischaracterizes your platform, the disposition log is where you correct it on the public record. <Link href="/spec/v1.0#landscape">See §10.2 of the spec.</Link>
-        </p>
-      </div>
+      <p className="text-ink-muted">
+        Vendors named in <Link href="/spec/v1.0#landscape">§ 10.2</Link> of the
+        specification may file ASPs against any characterization they believe is
+        inaccurate; the disposition log is the formal record of any resulting changes.
+      </p>
     </DocPage>
   );
 }
