@@ -19,7 +19,7 @@ export function SiteHeader() {
         >
           <span className="font-medium">AXL</span>
           <span className="hidden sm:inline font-mono text-[10px] tracking-[0.18em] uppercase text-ink-muted">
-            axl.org
+            axlspec.org
           </span>
         </Link>
 

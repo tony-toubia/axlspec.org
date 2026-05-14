@@ -45,7 +45,7 @@ export default function BuyersGuide() {
         <li>A published <strong>Conformance Statement</strong> at L1 or higher.</li>
         <li>For L2 claims: a reproducible link to Appendix A benchmark execution.</li>
         <li>The <strong>§7 agentic interface surface</strong>, exposed for your engineering team to test against.</li>
-        <li>For L3 claims: the reviewer report at <code>axl.org/certified/[vendor]</code>.</li>
+        <li>For L3 claims: the reviewer report at <code>axlspec.org/certified/[vendor]</code>.</li>
         <li>A clear statement of which AXL specification version the attestation covers.</li>
       </ul>
 
@@ -61,8 +61,8 @@ export default function BuyersGuide() {
       <h2><span className="num">§ 4</span>RFP question bank</h2>
       <p>
         A reference RFP question bank, mapped clause-by-clause to § 5 of the
-        specification, is published at <code>github.com/axl-spec/buyers-guide</code>{" "}
-        and may be reused in procurement documents.
+        specification, is forthcoming in the project repository at{" "}
+        <code>github.com/tony-toubia/axlspec.org</code> and may be reused in procurement documents.
       </p>
 
       <h2><span className="num">§ 5</span>Out of scope</h2>

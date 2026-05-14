@@ -14,8 +14,8 @@ export default function PressPage() {
       title={<>Press &amp; analyst contact.</>}
       subtitle="Editorial-board availability for press and analyst inquiries regarding the AXL Reference and the conformance program."
       meta={[
-        { label: "Press", value: "press@axl.org" },
-        { label: "Analyst", value: "analysts@axl.org" },
+        { label: "Press", value: "press@axlspec.org" },
+        { label: "Analyst", value: "analysts@axlspec.org" },
         { label: "Embargo", value: "48-hour notice; standard terms" },
       ]}
     >
@@ -36,7 +36,7 @@ export default function PressPage() {
 
       <h2><span className="num">§ 3</span>Editorial practice</h2>
       <p>
-        axl.org does not pre-announce vendors as forthcoming certifications, does not
+        axlspec.org does not pre-announce vendors as forthcoming certifications, does not
         characterize uncertified vendors as non-conformant absent a published
         comparison, and does not grant exclusive launch coverage.
       </p>

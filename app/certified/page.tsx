@@ -27,7 +27,7 @@ export default function CertifiedRegistry() {
       <div className="warning">
         <div className="label">Registry status</div>
         <p>
-          The verified-certification programme opens at v1.0 Final. Until then this registry is empty. Self-attested Conformance Statements at L1 and L2 are tracked separately on GitHub at <code>github.com/axl-spec/spec/tree/main/statements</code>.
+          The verified-certification programme opens at v1.0 Final. Until then this registry is empty. Self-attested Conformance Statements at L1 and L2 are tracked separately on GitHub at <code>github.com/tony-toubia/axlspec.org</code>.
         </p>
       </div>
 

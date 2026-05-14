@@ -21,17 +21,17 @@ export default function SpecV1() {
       }
       subtitle="A specification for the Agentic Experience Layer: a class of personalization system characterised by identity-free perception, autonomous in-session decisioning, real-time rendering, and continuous statistical learning."
       meta={[
-        { label: "This version", value: "axl.org/spec/v1.0" },
+        { label: "This version", value: "axlspec.org/spec/v1.0" },
         { label: "Status", value: "Working Draft" },
-        { label: "Editor", value: "axl.org editorial board" },
+        { label: "Editor", value: "axlspec.org editorial board" },
         { label: "License", value: "CC BY 4.0" },
-        { label: "Repository", value: <a href="https://github.com/axl-spec/spec">github.com/axl-spec/spec</a> },
+        { label: "Repository", value: <a href="https://github.com/tony-toubia/axlspec.org">github.com/tony-toubia/axlspec.org</a> },
       ]}
     >
       <div className="warning">
         <div className="label">Status of this document</div>
         <p>
-          This is a Working Draft. It is not a stable specification and may be cited only as work in progress. Comments are accepted as <strong>AXL Specification Proposals</strong> (ASPs) at <code>github.com/axl-spec/spec</code>. Each ASP receives a public disposition.
+          This is a Working Draft. It is not a stable specification and may be cited only as work in progress. Comments are accepted as <strong>AXL Specification Proposals</strong> (ASPs) at <code>github.com/tony-toubia/axlspec.org/issues</code>. Each ASP receives a public disposition.
         </p>
       </div>
 
@@ -158,7 +158,7 @@ export default function SpecV1() {
           <tr>
             <td><strong>L3</strong></td>
             <td>Reference</td>
-            <td>L1 + L2 + Recommended clauses; verified review by axl.org</td>
+            <td>L1 + L2 + Recommended clauses; verified review by axlspec.org</td>
             <td>AXL™ certification mark, per the <Link href="/trademark">trademark policy</Link></td>
           </tr>
         </tbody>
@@ -220,12 +220,12 @@ export default function SpecV1() {
         Test methodology
       </h2>
       <p>
-        Appendix A defines the published benchmarks against which L2 attestations and L3 verifications are evaluated: signal-collection accuracy, decisioning latency budget, render-substitution timing, and learn-loop statistical correctness. Executable artifacts are published at <code>github.com/axl-spec/conformance-tests</code>.
+        Appendix A defines the published benchmarks against which L2 attestations and L3 verifications are evaluated: signal-collection accuracy, decisioning latency budget, render-substitution timing, and learn-loop statistical correctness. Executable artifacts are forthcoming and will be linked from this section when published.
       </p>
 
       <p className="text-ink-muted">
         Comments on this draft should be filed as ASPs at{" "}
-        <code>github.com/axl-spec/spec</code>. Working-group activity is published at{" "}
+        <code>github.com/tony-toubia/axlspec.org/issues</code>. Working-group activity is published at{" "}
         <Link href="/working-groups">/working-groups</Link>; the Conformance Statement process is documented at{" "}
         <Link href="/certification">/certification</Link>.
       </p>

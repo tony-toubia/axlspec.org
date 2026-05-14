@@ -41,7 +41,7 @@ const GROUPS = [
     code: "WG-G",
     name: "Governance",
     scope: "Editorial process. Conformance program operations. Multi-stakeholder governance roadmap. Trademark policy.",
-    chair: "axl.org editorial board (rotating)",
+    chair: "axlspec.org editorial board (rotating)",
     meets: "Monthly, last Friday 10:00 PT",
   },
 ];
@@ -54,12 +54,12 @@ export default function WorkingGroupsPage() {
       subtitle="Five public-record bodies — one per pillar plus governance — that evolve the AXL Reference. Seats are open. Contributions are credited in the editorial section of subsequent specification versions."
       meta={[
         { label: "Charter", value: <Link href="/spec/v1.0#governance">§ 12.1 of the AXL Reference</Link> },
-        { label: "Calendar", value: <a href="https://github.com/axl-spec">github.com/axl-spec</a> },
-        { label: "ASP process", value: <Link href="/asp-process">axl.org/asp-process</Link> },
+        { label: "Calendar", value: <a href="https://github.com/tony-toubia/axlspec.org">github.com/tony-toubia/axlspec.org</a> },
+        { label: "ASP process", value: <Link href="/asp-process">axlspec.org/asp-process</Link> },
       ]}
     >
       <p>
-        Working groups meet on the public record. Minutes and decisions are published to the group&apos;s repository under <code>github.com/axl-spec</code>. Seats are open: anyone may attend; anyone with two accepted ASPs may be nominated for a voting seat.
+        Working groups meet on the public record. Minutes and decisions are published to the project repository at <code>github.com/tony-toubia/axlspec.org</code>. Seats are open: anyone may attend; anyone with two accepted ASPs may be nominated for a voting seat.
       </p>
 
       <h2><span className="num">§ 1</span>Active groups</h2>
@@ -98,7 +98,7 @@ export default function WorkingGroupsPage() {
 
       <h3>2.2 Contribute</h3>
       <p>
-        File an <strong>AXL Specification Proposal</strong> (ASP) against the group&apos;s scope on GitHub. ASPs follow the template at <code>github.com/axl-spec/spec/blob/main/ASP-process.md</code>. The relevant working group triages incoming ASPs at each biweekly meeting and assigns a disposition: accepted, deferred, declined, or under-discussion.
+        File an <strong>AXL Specification Proposal</strong> (ASP) as a GitHub issue at <code>github.com/tony-toubia/axlspec.org/issues</code> using the <code>asp</code> label. The relevant working group triages incoming ASPs at each biweekly meeting and assigns a disposition: accepted, deferred, declined, or under-discussion.
       </p>
 
       <h3>2.3 Stand for a seat</h3>

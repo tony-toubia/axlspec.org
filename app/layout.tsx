@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     template: "%s · AXL",
   },
   description:
-    "The AXL Reference is an open specification for the Agentic Experience Layer — the personalization infrastructure that replaces the CDP-plus-A/B-plus-journey stack. Published by axl.org under CC BY 4.0.",
+    "The AXL Reference is an open specification for the Agentic Experience Layer — the personalization infrastructure that replaces the CDP-plus-A/B-plus-journey stack. Published by axlspec.org under CC BY 4.0.",
   openGraph: {
     title: "AXL — The Agentic Experience Layer specification",
     description:

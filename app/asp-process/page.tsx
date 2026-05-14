@@ -19,14 +19,14 @@ export default function AspProcessPage() {
       }
       subtitle="The ASP is the unit of substantive comment on the specification. Each receives a public disposition from the relevant working group."
       meta={[
-        { label: "Template", value: <a href="https://github.com/axl-spec/spec/blob/main/ASP-process.md">ASP-process.md</a> },
+        { label: "File at", value: <a href="https://github.com/tony-toubia/axlspec.org/issues">github.com/tony-toubia/axlspec.org/issues</a> },
         { label: "Review", value: "Working groups, biweekly" },
         { label: "Credit", value: "Editorial section of subsequent versions" },
       ]}
     >
       <h2><span className="num">§ 1</span>What an ASP looks like</h2>
       <p>
-        An ASP is a GitHub issue on <code>github.com/axl-spec/spec</code>, labelled <code>asp</code>, using the template at <code>ASP-process.md</code>. It contains:
+        An ASP is a GitHub issue on <code>github.com/tony-toubia/axlspec.org</code>, labelled <code>asp</code>. It contains:
       </p>
       <ul>
         <li><strong>Clause cited.</strong> The exact clause of the specification being challenged or extended (e.g. § 5.2 Decide — Recommended capabilities).</li>
@@ -46,7 +46,7 @@ export default function AspProcessPage() {
 
       <h2><span className="num">§ 3</span>Disposition log</h2>
       <p>
-        Every ASP receives a public disposition. Dispositions are recorded in <code>github.com/axl-spec/spec/blob/main/disposition-log.md</code> and are the authoritative record of substantive comment on the specification.
+        Every ASP receives a public disposition, recorded in the issue thread and indexed in the disposition log forthcoming in the project repository. The log is the authoritative record of substantive comment on the specification.
       </p>
 
       <p className="text-ink-muted">

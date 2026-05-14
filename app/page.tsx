@@ -37,7 +37,7 @@ const LEVELS = [
   {
     level: "L3",
     name: "Reference",
-    desc: "Verified review by axl.org against Required and Recommended clauses. Prerequisite for use of the AXL™ certification mark.",
+    desc: "Verified review by axlspec.org against Required and Recommended clauses. Prerequisite for use of the AXL™ certification mark.",
   },
 ];
 
@@ -58,7 +58,7 @@ export default function Home() {
           <p className="mt-8 font-serif text-[18px] sm:text-[20px] leading-[1.55] text-ink-soft max-w-[62ch]">
             This document defines a class of personalization infrastructure characterised
             by four required pillars — perceive, decide, render, learn — and three
-            conformance levels. Stewarded by axl.org. Published under CC BY 4.0.
+            conformance levels. Stewarded by axlspec.org. Published under CC BY 4.0.
           </p>
 
           <div className="mt-12 flex flex-wrap gap-3">
@@ -83,7 +83,7 @@ export default function Home() {
             </div>
             <div>
               <dt className="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-muted">This version</dt>
-              <dd className="mt-1 text-ink-soft">v1.0 Draft · axl.org/spec/v1.0</dd>
+              <dd className="mt-1 text-ink-soft">v1.0 Draft · axlspec.org/spec/v1.0</dd>
             </div>
             <div>
               <dt className="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-muted">Comment</dt>
@@ -116,8 +116,8 @@ export default function Home() {
             </p>
             <p>
               The wordmark <strong className="text-ink">AXL</strong> is owned by
-              Cadence, Inc. The certification mark <strong className="text-ink">AXL™</strong>{" "}
-              is owned and administered by axl.org and is used by certified vendors
+              Cadence The certification mark <strong className="text-ink">AXL™</strong>{" "}
+              is owned and administered by axlspec.org and is used by certified vendors
               under the <Link href="/trademark" className="underline decoration-rule-strong underline-offset-[3px] hover:decoration-ink">trademark policy</Link>.
               The descriptive longform &ldquo;Agentic Experience Layer&rdquo; is not registered
               and is free for any party to use.

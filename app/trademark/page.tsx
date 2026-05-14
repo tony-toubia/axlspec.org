@@ -5,7 +5,7 @@ import { DocPage } from "@/app/components/DocPage";
 export const metadata: Metadata = {
   title: "AXL™ trademark policy",
   description:
-    "The wordmark AXL is owned by Cadence, Inc. The certification mark AXL™ is owned and administered by axl.org and used by certified vendors. This page sets out the correct use of both.",
+    "The wordmark AXL is owned by Cadence The certification mark AXL™ is owned and administered by axlspec.org and used by certified vendors. This page sets out the correct use of both.",
 };
 
 export default function TrademarkPage() {
@@ -20,9 +20,9 @@ export default function TrademarkPage() {
       subtitle="Two marks, two owners, one policy. The policy governs how implementers, certified vendors, analysts, and journalists may refer to AXL, the AXL™ certification mark, and the Agentic Experience Layer category."
       meta={[
         { label: "Status", value: "Draft · effective with v1.0 Final" },
-        { label: "Wordmark owner", value: "Cadence, Inc." },
-        { label: "Certification-mark owner", value: "axl.org" },
-        { label: "Issues", value: <a href="https://github.com/axl-spec/spec/issues">github.com/axl-spec/spec/issues</a> },
+        { label: "Wordmark owner", value: "Cadence" },
+        { label: "Certification-mark owner", value: "axlspec.org" },
+        { label: "Issues", value: <a href="https://github.com/tony-toubia/axlspec.org/issues">github.com/tony-toubia/axlspec.org/issues</a> },
       ]}
     >
       <div className="warning">
@@ -36,12 +36,23 @@ export default function TrademarkPage() {
 
       <h3>1.1 The wordmark — AXL</h3>
       <p>
-        <strong>AXL</strong> is a wordmark owned by Cadence, Inc., applied for as a standard-character mark in Class 9 (downloadable software) and Class 42 (SaaS / technology services) in the United States, with international filings tracked at <code>axl.org/trademark/registrations</code>. Cadence licenses the wordmark to axl.org for use in connection with the specification, the certification program, and the AXL™ certification mark.
+        <strong>AXL</strong> is used as a wordmark by Cadence and is intended to be filed
+        as a standard-character mark in Class 9 (downloadable software) and Class 42
+        (SaaS / technology services) in the United States, subject to clearance and
+        counsel review. International filings are intended to follow. Cadence intends
+        to license the wordmark to axlspec.org for use in connection with the
+        specification, the certification program, and the AXL™ certification mark.
       </p>
 
       <h3>1.2 The certification mark — AXL™</h3>
       <p>
-        <strong>AXL™</strong> is a certification mark, owned and administered by axl.org pursuant to §1054 of the U.S. Lanham Act. It is used by third-party vendors to indicate that their products have been verified to conform to the AXL Reference at a defined level. The mark is <em>not</em> a Cadence asset; axl.org reviews and licenses the mark to certified vendors symmetrically, regardless of competitive relationship with Cadence.
+        <strong>AXL™</strong> is intended to be filed as a certification mark by
+        axlspec.org pursuant to § 1054 of the U.S. Lanham Act. Once registered, it
+        will be used by third-party vendors to indicate that their products have
+        been verified to conform to the AXL Reference at a defined level. The mark is
+        not a Cadence asset; review and licensing of the mark will be conducted
+        symmetrically by axlspec.org, regardless of any commercial relationship
+        between an applicant and Cadence.
       </p>
 
       <h3>1.3 The longform — &ldquo;Agentic Experience Layer&rdquo;</h3>
@@ -62,19 +73,19 @@ export default function TrademarkPage() {
 
       <h2><span className="num">§ 3</span>Restricted use — certification mark</h2>
       <p>
-        The AXL™ certification mark (with the trademark symbol or in branded contexts that imply certification) may be used <strong>only</strong> by vendors who have received a current, valid certification from axl.org. Specifically:
+        The AXL™ certification mark (with the trademark symbol or in branded contexts that imply certification) may be used <strong>only</strong> by vendors who have received a current, valid certification from axlspec.org. Specifically:
       </p>
       <ul>
         <li>Permitted: <code>AXL™ Certified — Production (L2) — v1.0</code>, on a certified product, while the certification is current.</li>
-        <li>Permitted: an <strong>AXL™</strong> badge on a vendor&apos;s trust page, linking to the reviewer report at <code>axl.org/certified/[vendor]</code>.</li>
+        <li>Permitted: an <strong>AXL™</strong> badge on a vendor&apos;s trust page, linking to the reviewer report at <code>axlspec.org/certified/[vendor]</code>.</li>
         <li>Not permitted: use of &ldquo;AXL Certified&rdquo; or the badge by a vendor with no current verified certification.</li>
         <li>Not permitted: use of the mark on a different product, a different version, or a different SKU than the certified one.</li>
-        <li>Not permitted: implying axl.org endorsement of the vendor&apos;s commercial offering.</li>
+        <li>Not permitted: implying axlspec.org endorsement of the vendor&apos;s commercial offering.</li>
       </ul>
 
       <h2><span className="num">§ 4</span>Cure period and enforcement</h2>
       <p>
-        Where the editorial board observes use of the AXL™ mark inconsistent with §3, axl.org will issue a written notice describing the inconsistency. The licensee has 30 days to cure. Bad-faith or repeated violations may result in certification revocation and a public record of the revocation on <code>axl.org/certified</code>.
+        Where the editorial board observes use of the AXL™ mark inconsistent with §3, axlspec.org will issue a written notice describing the inconsistency. The licensee has 30 days to cure. Bad-faith or repeated violations may result in certification revocation and a public record of the revocation on <code>axlspec.org/certified</code>.
       </p>
 
       <h2><span className="num">§ 5</span>Self-attestation language</h2>
@@ -96,7 +107,7 @@ export default function TrademarkPage() {
 
       <h2><span className="num">§ 7</span>Contact</h2>
       <p>
-        Trademark questions, mark-use clarifications, and notices may be sent to <code>trademark@axl.org</code>. The editorial board responds within 10 business days for standard inquiries.
+        Trademark questions, mark-use clarifications, and notices may be sent to <code>trademark@axlspec.org</code>. The editorial board responds within 10 business days for standard inquiries.
       </p>
 
       <div className="callout">

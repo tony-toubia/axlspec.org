@@ -5,7 +5,7 @@ import { DocPage } from "@/app/components/DocPage";
 export const metadata: Metadata = {
   title: "Governance roadmap",
   description:
-    "axl.org's path from founding-sponsor stewardship to multi-stakeholder governance. Trigger conditions and transition milestones.",
+    "axlspec.org's path from founding-sponsor stewardship to multi-stakeholder governance. Trigger conditions and transition milestones.",
 };
 
 export default function GovernancePage() {
@@ -17,7 +17,7 @@ export default function GovernancePage() {
           From founding sponsor <em className="italic font-normal">to multi-stakeholder body.</em>
         </>
       }
-      subtitle="axl.org begins as a Cadence-controlled entity and transitions to a multi-stakeholder governance body. The roadmap below sets out the trigger conditions and the structural model."
+      subtitle="axlspec.org begins as a Cadence-controlled entity and transitions to a multi-stakeholder governance body. The roadmap below sets out the trigger conditions and the structural model."
       meta={[
         { label: "Authority", value: <Link href="/spec/v1.0#governance">§ 12.1 of the AXL Reference</Link> },
         { label: "Current phase", value: "Phase 0 — founding stewardship" },
@@ -42,7 +42,7 @@ export default function GovernancePage() {
         <tbody>
           <tr>
             <td><strong>0 — Founding stewardship</strong></td>
-            <td>axl.org operated by Cadence. Editorial board appointed by Cadence; working-group chairs invited from the community.</td>
+            <td>axlspec.org operated by Cadence. Editorial board appointed by Cadence; working-group chairs invited from the community.</td>
             <td>v1.0 Final published; ≥ 3 verified L3 certifications issued.</td>
           </tr>
           <tr>
@@ -52,7 +52,7 @@ export default function GovernancePage() {
           </tr>
           <tr>
             <td><strong>2 — Multi-stakeholder body</strong></td>
-            <td>axl.org operating under 501(c)(6) or equivalent. Cadence holds the same voting seat as any other certified vendor.</td>
+            <td>axlspec.org operating under 501(c)(6) or equivalent. Cadence holds the same voting seat as any other certified vendor.</td>
             <td>Steady state. Reviewed annually.</td>
           </tr>
         </tbody>
@@ -61,10 +61,10 @@ export default function GovernancePage() {
       <h2><span className="num">§ 3</span>What stays consistent across phases</h2>
       <ul>
         <li>The specification is published under CC BY 4.0 from v1.0 onward.</li>
-        <li>The AXL™ certification mark is owned by axl.org, never by Cadence.</li>
+        <li>The AXL™ certification mark is owned by axlspec.org, never by Cadence.</li>
         <li>Conformance review is symmetric: Cadence applies for and is evaluated under the same process as any other vendor.</li>
         <li>Working-group meetings are public-record from day one.</li>
-        <li>Reviewer reports are published at <code>axl.org/certified/[vendor]</code>.</li>
+        <li>Reviewer reports are published at <code>axlspec.org/certified/[vendor]</code>.</li>
       </ul>
 
       <div className="callout">

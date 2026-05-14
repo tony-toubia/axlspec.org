@@ -51,7 +51,7 @@ export default function TcoPage() {
 
       <h2><span className="num">§ 3</span>Interim worksheet</h2>
       <p>
-        A printable worksheet is available at <code>axl.org/tco/worksheet.pdf</code>.
+        A printable worksheet is forthcoming.
       </p>
     </DocPage>
   );

@@ -13,12 +13,12 @@ export default function CertificationPage() {
     <DocPage
       eyebrow="AXL™ Certification"
       title={<>Certification process.</>}
-      subtitle="Conditions under which the AXL™ certification mark is licensed to a vendor. L3 review is conducted by axl.org against the published specification."
+      subtitle="Conditions under which the AXL™ certification mark is licensed to a vendor. L3 review is conducted by axlspec.org against the published specification."
       meta={[
         { label: "Programme status", value: "Verified L3 review opens at v1.0 Final" },
-        { label: "Reviewer panel", value: "axl.org editorial board, plus rotating external reviewer" },
-        { label: "Mark owner", value: "axl.org" },
-        { label: "Policy", value: <Link href="/trademark">axl.org/trademark</Link> },
+        { label: "Reviewer panel", value: "axlspec.org editorial board, plus rotating external reviewer" },
+        { label: "Mark owner", value: "axlspec.org" },
+        { label: "Policy", value: <Link href="/trademark">axlspec.org/trademark</Link> },
       ]}
     >
       <h2><span className="num">§ 1</span>Eligibility</h2>
@@ -36,12 +36,12 @@ export default function CertificationPage() {
 
       <h3>2.1 Application</h3>
       <p>
-        File a certification application at <code>certification@axl.org</code> containing the Conformance Statement, contact information for the engineering lead, and a target review window.
+        File a certification application at <code>certification@axlspec.org</code> containing the Conformance Statement, contact information for the engineering lead, and a target review window.
       </p>
 
       <h3>2.2 Reviewer assignment</h3>
       <p>
-        The editorial board assigns a reviewer panel of two axl.org reviewers and one rotating external reviewer drawn from the working-group pool. Reviewer identity is published at the conclusion of the review.
+        The editorial board assigns a reviewer panel of two axlspec.org reviewers and one rotating external reviewer drawn from the working-group pool. Reviewer identity is published at the conclusion of the review.
       </p>
 
       <h3>2.3 Verification</h3>
@@ -57,18 +57,18 @@ export default function CertificationPage() {
 
       <h3>2.4 Report</h3>
       <p>
-        A reviewer report is published at <code>axl.org/certified/[vendor]</code>, accessible publicly, containing the panel&apos;s findings, any conditional remediations, and the issued certification.
+        A reviewer report is published at <code>axlspec.org/certified/[vendor]</code>, accessible publicly, containing the panel&apos;s findings, any conditional remediations, and the issued certification.
       </p>
 
       <h3>2.5 Issuance</h3>
       <p>
-        On clean verification, axl.org issues a time-bounded license to use the AXL™ certification mark on the certified product, for the certified specification version, under the trademark policy.
+        On clean verification, axlspec.org issues a time-bounded license to use the AXL™ certification mark on the certified product, for the certified specification version, under the trademark policy.
       </p>
 
       <h2><span className="num">§ 3</span>Fees</h2>
       <div className="callout">
         <p>
-          Fee schedule is published separately at <code>axl.org/certification/fees</code>. Fees are sized to cover reviewer-panel time and are tiered by vendor revenue. Working-group contributors who have filed accepted ASPs receive a fee reduction. Open-source implementers operating under a non-commercial license are exempt from fees through v1.x.
+          A fee schedule is forthcoming. Fees are intended to cover reviewer-panel time and to be tiered by vendor revenue, with reductions for working-group contributors and an exemption for open-source implementers operating under a non-commercial license through v1.x.
         </p>
       </div>
 
@@ -79,7 +79,7 @@ export default function CertificationPage() {
 
       <h2><span className="num">§ 5</span>Revocation and re-certification</h2>
       <p>
-        axl.org may revoke certification where:
+        axlspec.org may revoke certification where:
       </p>
       <ul>
         <li>The implementation materially diverges from the attested state.</li>
@@ -92,7 +92,7 @@ export default function CertificationPage() {
 
       <h2><span className="num">§ 6</span>Open transparency</h2>
       <p>
-        The reviewer roster, reviewer reports, and revocations are public. axl.org publishes an annual transparency report including certifications issued, revocations, and aggregate working-group contribution metrics.
+        The reviewer roster, reviewer reports, and revocations are public. axlspec.org publishes an annual transparency report including certifications issued, revocations, and aggregate working-group contribution metrics.
       </p>
 
       <p className="text-ink-muted">

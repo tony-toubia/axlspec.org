@@ -22,14 +22,14 @@ const COLUMNS: { heading: string; links: { href: string; label: string }[] }[] =
     heading: "Community",
     links: [
       { href: "/working-groups", label: "Working groups" },
-      { href: "https://github.com/axl-spec", label: "GitHub" },
+      { href: "https://github.com/tony-toubia/axlspec.org", label: "GitHub" },
       { href: "/asp-process", label: "Submit an ASP" },
     ],
   },
   {
     heading: "About",
     links: [
-      { href: "/about", label: "axl.org" },
+      { href: "/about", label: "axlspec.org" },
       { href: "/governance", label: "Governance roadmap" },
       { href: "/press", label: "Press & analyst" },
     ],
@@ -49,7 +49,7 @@ export function SiteFooter() {
               </span>
             </p>
             <p className="mt-4 font-mono text-[10px] tracking-[0.18em] uppercase text-ink-muted">
-              axl.org · v1.0 draft
+              axlspec.org · v1.0 draft
             </p>
           </div>
 
@@ -77,10 +77,10 @@ export function SiteFooter() {
         <div className="mt-16 pt-8 border-t rule flex flex-col md:flex-row justify-between gap-4 text-[12px] text-ink-muted">
           <p className="font-serif italic">
             The AXL Reference is published under CC BY 4.0. AXL™ is a
-            certification mark administered by axl.org.
+            certification mark administered by axlspec.org.
           </p>
           <p className="font-mono tracking-[0.05em]">
-            © {new Date().getFullYear()} axl.org
+            © {new Date().getFullYear()} axlspec.org
           </p>
         </div>
       </div>

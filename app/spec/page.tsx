@@ -13,7 +13,7 @@ const VERSIONS = [
     v: "v1.0 Draft",
     href: "/spec/v1.0",
     status: "Current — open for comment",
-    note: "Published as a Working Draft. ASPs accepted at github.com/axl-spec/spec.",
+    note: "Published as a Working Draft. ASPs accepted at github.com/tony-toubia/axlspec.org/issues.",
     current: true,
   },
   {
@@ -34,7 +34,7 @@ export default function SpecIndex() {
       meta={[
         { label: "Versioning policy", value: <Link href="/spec/v1.0#governance">§ 12.2</Link> },
         { label: "License", value: "CC BY 4.0" },
-        { label: "Repository", value: <a href="https://github.com/axl-spec/spec">github.com/axl-spec/spec</a> },
+        { label: "Repository", value: <a href="https://github.com/tony-toubia/axlspec.org">github.com/tony-toubia/axlspec.org</a> },
       ]}
     >
       <div className="!mt-2 space-y-4">

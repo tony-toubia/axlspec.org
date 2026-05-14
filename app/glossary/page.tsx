@@ -22,15 +22,15 @@ const TERMS: { term: string; def: React.ReactNode }[] = [
   },
   {
     term: "Attestation",
-    def: "A statement by an implementer that their product satisfies a specific conformance level. Self-attested at L1 and L2; verified by axl.org at L3.",
+    def: "A statement by an implementer that their product satisfies a specific conformance level. Self-attested at L1 and L2; verified by axlspec.org at L3.",
   },
   {
     term: "AXL (wordmark)",
-    def: "The three-letter wordmark, owned by Cadence, Inc. Used to refer to the specification, the certification mark, and the category architecture.",
+    def: "The three-letter wordmark, owned by Cadence Used to refer to the specification, the certification mark, and the category architecture.",
   },
   {
     term: "AXL™ (certification mark)",
-    def: "The certification mark, owned and administered by axl.org. May only be used by vendors with current verified L3 certification, under the trademark policy.",
+    def: "The certification mark, owned and administered by axlspec.org. May only be used by vendors with current verified L3 certification, under the trademark policy.",
   },
   {
     term: "Buyer's guide",
@@ -54,7 +54,7 @@ const TERMS: { term: string; def: React.ReactNode }[] = [
   },
   {
     term: "L1, L2, L3 — Conformance levels",
-    def: "Functional, Production, Reference. L1 and L2 are self-attested; L3 is verified by axl.org and is the prerequisite for the AXL™ mark.",
+    def: "Functional, Production, Reference. L1 and L2 are self-attested; L3 is verified by axlspec.org and is the prerequisite for the AXL™ mark.",
   },
   {
     term: "Maturity model",

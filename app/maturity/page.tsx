@@ -56,7 +56,7 @@ const TIERS = [
     chars: [
       "All Required and Recommended capabilities of §5 satisfied.",
       "Published Appendix A benchmark reproductions.",
-      "§7 agentic interface surface inspectable by axl.org reviewers.",
+      "§7 agentic interface surface inspectable by axlspec.org reviewers.",
       "Eligible for L3 verified certification and AXL™ mark.",
     ],
   },
