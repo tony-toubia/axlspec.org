@@ -17,7 +17,7 @@ export default function GovernancePage() {
           From founding sponsor <em className="italic font-normal">to multi-stakeholder body.</em>
         </>
       }
-      subtitle="axlspec.org begins as a Cadence-controlled entity and transitions to a multi-stakeholder governance body. The roadmap below sets out the trigger conditions and the structural model."
+      subtitle="axlspec.org begins as an AXO-controlled entity and transitions to a multi-stakeholder governance body. The roadmap below sets out the trigger conditions and the structural model."
       meta={[
         { label: "Authority", value: <Link href="/spec/v1.0#governance">§ 12.1 of the AXL Reference</Link> },
         { label: "Current phase", value: "Phase 0 — founding stewardship" },
@@ -26,7 +26,7 @@ export default function GovernancePage() {
     >
       <h2><span className="num">§ 1</span>Why this matters</h2>
       <p>
-        A specification governed by one vendor is not credible as a specification; it is a marketing artifact. The AXL Reference is published by Cadence as founding sponsor with the explicit, written intent of moving stewardship to a multi-stakeholder body. The roadmap below is the public commitment to that path.
+        A specification governed by one vendor is not credible as a specification; it is a marketing artifact. The AXL Reference is published by AXO as founding sponsor with the explicit, written intent of moving stewardship to a multi-stakeholder body. The roadmap below is the public commitment to that path.
       </p>
 
       <h2><span className="num">§ 2</span>Phases</h2>
@@ -42,17 +42,17 @@ export default function GovernancePage() {
         <tbody>
           <tr>
             <td><strong>0 — Founding stewardship</strong></td>
-            <td>axlspec.org operated by Cadence. Editorial board appointed by Cadence; working-group chairs invited from the community.</td>
+            <td>axlspec.org operated by AXO. Editorial board appointed by AXO; working-group chairs invited from the community.</td>
             <td>v1.0 Final published; ≥ 3 verified L3 certifications issued.</td>
           </tr>
           <tr>
             <td><strong>1 — Mixed governance</strong></td>
-            <td>Editorial board reconstituted with Cadence holding ≤ 50% of voting seats. Independent chair seated.</td>
+            <td>Editorial board reconstituted with AXO holding ≤ 50% of voting seats. Independent chair seated.</td>
             <td>≥ 10 verified L3 certifications across ≥ 5 distinct legal-entity vendors.</td>
           </tr>
           <tr>
             <td><strong>2 — Multi-stakeholder body</strong></td>
-            <td>axlspec.org operating under 501(c)(6) or equivalent. Cadence holds the same voting seat as any other certified vendor.</td>
+            <td>axlspec.org operating under 501(c)(6) or equivalent. AXO holds the same voting seat as any other certified vendor.</td>
             <td>Steady state. Reviewed annually.</td>
           </tr>
         </tbody>
@@ -61,8 +61,8 @@ export default function GovernancePage() {
       <h2><span className="num">§ 3</span>What stays consistent across phases</h2>
       <ul>
         <li>The specification is published under CC BY 4.0 from v1.0 onward.</li>
-        <li>The AXL™ certification mark is owned by axlspec.org, never by Cadence.</li>
-        <li>Conformance review is symmetric: Cadence applies for and is evaluated under the same process as any other vendor.</li>
+        <li>The AXL™ certification mark is owned by axlspec.org, never by AXO.</li>
+        <li>Conformance review is symmetric: AXO applies for and is evaluated under the same process as any other vendor.</li>
         <li>Working-group meetings are public-record from day one.</li>
         <li>Reviewer reports are published at <code>axlspec.org/certified/[vendor]</code>.</li>
       </ul>

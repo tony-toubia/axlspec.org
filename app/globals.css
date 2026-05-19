@@ -38,7 +38,9 @@ body {
   color: var(--color-paper);
 }
 
-a { color: inherit; }
+@layer base {
+  a { color: inherit; }
+}
 
 @layer utilities {
   .font-serif { font-family: var(--font-serif); }

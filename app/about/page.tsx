@@ -5,7 +5,7 @@ import { DocPage } from "@/app/components/DocPage";
 export const metadata: Metadata = {
   title: "About axlspec.org",
   description:
-    "axlspec.org is the editor and steward of the AXL Reference. Founding sponsor: Cadence. Governance roadmap published at /governance.",
+    "axlspec.org is the editor and steward of the AXL Reference. Founding sponsor: AXO. Governance roadmap published at /governance.",
 };
 
 export default function AboutPage() {
@@ -13,9 +13,9 @@ export default function AboutPage() {
     <DocPage
       eyebrow="About"
       title={<>axlspec.org.</>}
-      subtitle="Editor and steward of the AXL Reference. Founding sponsor: Cadence Governance roadmap to multi-stakeholder body published at /governance."
+      subtitle="Editor and steward of the AXL Reference. Founding sponsor: AXO. Governance roadmap to multi-stakeholder body published at /governance."
       meta={[
-        { label: "Founding sponsor", value: "Cadence" },
+        { label: "Founding sponsor", value: "AXO" },
         { label: "Governance roadmap", value: <Link href="/governance">/governance</Link> },
         { label: "Contact", value: "hello@axlspec.org" },
       ]}
@@ -27,12 +27,12 @@ export default function AboutPage() {
         the organization does not operate commercial product offerings.
       </p>
 
-      <h2><span className="num">§ 2</span>Relationship to Cadence</h2>
+      <h2><span className="num">§ 2</span>Relationship to AXO</h2>
       <p>
-        Cadence is the founding sponsor and funds the operations of axlspec.org at
+        AXO is the founding sponsor and funds the operations of axlspec.org at
         the current phase of the <Link href="/governance">governance roadmap</Link>.
-        The AXL™ certification mark is owned by axlspec.org and is not a Cadence asset.
-        Certification review of Cadence&apos;s own products is conducted under the same
+        The AXL™ certification mark is owned by axlspec.org and is not an AXO asset.
+        Certification review of AXO&apos;s own products is conducted under the same
         process as for any other applicant.
       </p>
 

@@ -116,7 +116,7 @@ export default function Home() {
             </p>
             <p>
               The wordmark <strong className="text-ink">AXL</strong> is owned by
-              Cadence The certification mark <strong className="text-ink">AXL™</strong>{" "}
+              AXO. The certification mark <strong className="text-ink">AXL™</strong>{" "}
               is owned and administered by axlspec.org and is used by certified vendors
               under the <Link href="/trademark" className="underline decoration-rule-strong underline-offset-[3px] hover:decoration-ink">trademark policy</Link>.
               The descriptive longform &ldquo;Agentic Experience Layer&rdquo; is not registered

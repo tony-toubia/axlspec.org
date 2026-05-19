@@ -1,6 +1,6 @@
 # axlspec.org
 
-The public-facing website for the [AXL Reference](https://axlspec.org/spec/v1.0) — an open specification for the **Agentic Experience Layer** category, stewarded by axlspec.org. Founding sponsor: Cadence.
+The public-facing website for the [AXL Reference](https://axlspec.org/spec/v1.0) — an open specification for the **Agentic Experience Layer** category, stewarded by axlspec.org. Founding sponsor: AXO.
 
 ## Stack
 

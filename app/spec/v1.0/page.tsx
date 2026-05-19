@@ -91,7 +91,7 @@ export default function SpecV1() {
         The four pillars in §5 are required. The principles below are normative — they constrain how the pillars are implemented.
       </p>
       <ul>
-        <li><strong>Identity-free by default.</strong> No persistent identifier required for L1 conformance. Implementations that link sessions to identity do so only at the operator's explicit configuration.</li>
+        <li><strong>Identity-free by default.</strong> No persistent identifier required for L1 conformance. Implementations that link sessions to identity do so only at the operator&apos;s explicit configuration.</li>
         <li><strong>In-session decisioning.</strong> All four pillars operate within the lifetime of a single session. Cross-session learning is permitted; in-session human approval is not required.</li>
         <li><strong>Autonomous.</strong> Treatments are selected by the agent without per-request human gating. Operators configure constraints, not decisions.</li>
         <li><strong>Continuously learning.</strong> Outcomes feed the decisioning model in observable cadence. Learn is not a quarterly batch step.</li>

@@ -5,7 +5,7 @@ import { DocPage } from "@/app/components/DocPage";
 export const metadata: Metadata = {
   title: "AXL™ trademark policy",
   description:
-    "The wordmark AXL is owned by Cadence The certification mark AXL™ is owned and administered by axlspec.org and used by certified vendors. This page sets out the correct use of both.",
+    "The wordmark AXL is owned by AXO. The certification mark AXL™ is owned and administered by axlspec.org and used by certified vendors. This page sets out the correct use of both.",
 };
 
 export default function TrademarkPage() {
@@ -20,7 +20,7 @@ export default function TrademarkPage() {
       subtitle="Two marks, two owners, one policy. The policy governs how implementers, certified vendors, analysts, and journalists may refer to AXL, the AXL™ certification mark, and the Agentic Experience Layer category."
       meta={[
         { label: "Status", value: "Draft · effective with v1.0 Final" },
-        { label: "Wordmark owner", value: "Cadence" },
+        { label: "Wordmark owner", value: "AXO" },
         { label: "Certification-mark owner", value: "axlspec.org" },
         { label: "Issues", value: <a href="https://github.com/tony-toubia/axlspec.org/issues">github.com/tony-toubia/axlspec.org/issues</a> },
       ]}
@@ -36,10 +36,10 @@ export default function TrademarkPage() {
 
       <h3>1.1 The wordmark — AXL</h3>
       <p>
-        <strong>AXL</strong> is used as a wordmark by Cadence and is intended to be filed
+        <strong>AXL</strong> is used as a wordmark by AXO and is intended to be filed
         as a standard-character mark in Class 9 (downloadable software) and Class 42
         (SaaS / technology services) in the United States, subject to clearance and
-        counsel review. International filings are intended to follow. Cadence intends
+        counsel review. International filings are intended to follow. AXO intends
         to license the wordmark to axlspec.org for use in connection with the
         specification, the certification program, and the AXL™ certification mark.
       </p>
@@ -50,9 +50,9 @@ export default function TrademarkPage() {
         axlspec.org pursuant to § 1054 of the U.S. Lanham Act. Once registered, it
         will be used by third-party vendors to indicate that their products have
         been verified to conform to the AXL Reference at a defined level. The mark is
-        not a Cadence asset; review and licensing of the mark will be conducted
+        not an AXO asset; review and licensing of the mark will be conducted
         symmetrically by axlspec.org, regardless of any commercial relationship
-        between an applicant and Cadence.
+        between an applicant and AXO.
       </p>
 
       <h3>1.3 The longform — &ldquo;Agentic Experience Layer&rdquo;</h3>
@@ -100,9 +100,9 @@ export default function TrademarkPage() {
         Not permitted: dropping &ldquo;self-attested,&rdquo; or applying the AXL™ symbol absent verified certification.
       </p>
 
-      <h2><span className="num">§ 6</span>Cadence&apos;s use of the wordmark</h2>
+      <h2><span className="num">§ 6</span>AXO&apos;s use of the wordmark</h2>
       <p>
-        As wordmark owner, Cadence is free to use &ldquo;AXL&rdquo; in product, marketing, and sales contexts. Under §1054 of the Lanham Act, Cadence does <em>not</em> use the certification mark on its own goods; Cadence applies for L3 certification symmetrically and uses the AXL™ mark only after issuance.
+        As wordmark owner, AXO is free to use &ldquo;AXL&rdquo; in product, marketing, and sales contexts. Under §1054 of the Lanham Act, AXO does <em>not</em> use the certification mark on its own goods; AXO applies for L3 certification symmetrically and uses the AXL™ mark only after issuance.
       </p>
 
       <h2><span className="num">§ 7</span>Contact</h2>

@@ -26,7 +26,7 @@ const TERMS: { term: string; def: React.ReactNode }[] = [
   },
   {
     term: "AXL (wordmark)",
-    def: "The three-letter wordmark, owned by Cadence Used to refer to the specification, the certification mark, and the category architecture.",
+    def: "The three-letter wordmark, owned by AXO. Used to refer to the specification, the certification mark, and the category architecture.",
   },
   {
     term: "AXL™ (certification mark)",
