@@ -3,7 +3,7 @@ import Link from "next/link";
 import { DocPage } from "@/app/components/DocPage";
 
 export const metadata: Metadata = {
-  title: "ASP process — Submit a specification proposal",
+  title: "ASP process – Submit a specification proposal",
   description:
     "How to file an AXL Specification Proposal (ASP) against the working draft of the AXL Reference. The unit of substantive comment is the ASP.",
 };
@@ -29,7 +29,7 @@ export default function AspProcessPage() {
         An ASP is a GitHub issue on <code>github.com/tony-toubia/axlspec.org</code>, labelled <code>asp</code>. It contains:
       </p>
       <ul>
-        <li><strong>Clause cited.</strong> The exact clause of the specification being challenged or extended (e.g. § 5.2 Decide — Recommended capabilities).</li>
+        <li><strong>Clause cited.</strong> The exact clause of the specification being challenged or extended (e.g. § 5.2 Decide – Recommended capabilities).</li>
         <li><strong>Proposed change.</strong> The specific replacement, addition, or deletion proposed.</li>
         <li><strong>Rationale.</strong> Production evidence, citation to adjacent specifications, or a counter-example to the current wording.</li>
         <li><strong>Compatibility.</strong> Whether the change is breaking against v1.0 Final, and if so, why a major-version change is warranted.</li>

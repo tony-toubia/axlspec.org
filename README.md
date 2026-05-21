@@ -1,30 +1,30 @@
 # axlspec.org
 
-The public-facing website for the [AXL Reference](https://axlspec.org/spec/v1.0) — an open specification for the **Agentic Experience Layer** category, stewarded by axlspec.org. Founding sponsor: AXO.
+The public-facing website for the [AXL Reference](https://axlspec.org/spec/v1.0) – an open specification for the **Agentic Experience Layer** category, stewarded by axlspec.org. Founding sponsor: AXO.
 
 ## Stack
 
-- **Framework** — [Next.js 16](https://nextjs.org) App Router, React 19, TypeScript
-- **Styling** — Tailwind CSS v4 (CSS-first `@theme` config in `app/globals.css`)
-- **Fonts** — Fraunces (serif), Inter (sans), JetBrains Mono (mono) via `next/font/google`
-- **Hosting** — designed to deploy on Vercel; Fluid Compute defaults are fine
+- **Framework** – [Next.js 16](https://nextjs.org) App Router, React 19, TypeScript
+- **Styling** – Tailwind CSS v4 (CSS-first `@theme` config in `app/globals.css`)
+- **Fonts** – Fraunces (serif), Inter (sans), JetBrains Mono (mono) via `next/font/google`
+- **Hosting** – designed to deploy on Vercel; Fluid Compute defaults are fine
 
 ## Information architecture
 
 | Route                  | Purpose                                                  |
 | ---------------------- | -------------------------------------------------------- |
-| `/`                    | Manifesto landing — four pillars, three conformance levels |
+| `/`                    | Manifesto landing – four pillars, three conformance levels |
 | `/spec` · `/spec/v1.0` | Specification versions and the full v1.0 Draft           |
-| `/conformance`         | § 6 — Conformance levels and self-attestation            |
+| `/conformance`         | § 6 – Conformance levels and self-attestation            |
 | `/certification`       | The verified-certification process for L3 + AXL™ mark    |
 | `/certified`           | Registry of certified vendors (opens v1.0 Final)          |
-| `/maturity`            | § 9 — Buyer-facing maturity model                        |
+| `/maturity`            | § 9 – Buyer-facing maturity model                        |
 | `/trademark`           | The AXL / AXL™ trademark policy                           |
 | `/working-groups`      | Five working groups; how to join                          |
 | `/asp-process`         | How to file an AXL Specification Proposal                |
-| `/buyers-guide`        | § 11 — procurement-facing rendering                       |
+| `/buyers-guide`        | § 11 – procurement-facing rendering                       |
 | `/tco`                 | TCO calculator (interactive at v1.0 Final)               |
-| `/glossary`            | § 3 — normative terminology                              |
+| `/glossary`            | § 3 – normative terminology                              |
 | `/governance`          | Roadmap to multi-stakeholder governance                  |
 | `/press` · `/about`    | Press, analyst, and steward info                          |
 
@@ -63,8 +63,8 @@ Tokens are exposed as Tailwind utilities (`bg-bg`, `text-ink`, `border-rule`, et
 
 `/reference/` contains the original strategy documents the site was built from:
 
-1. `01-axl-trademark-brief.html` — trademark & certification-mark strategy
-2. `02-axl-launch-sequence.html` — 24-week launch plan
-3. `03-axl-contributor-invitation.html` — letter to named §10.2 vendors
+1. `01-axl-trademark-brief.html` – trademark & certification-mark strategy
+2. `02-axl-launch-sequence.html` – 24-week launch plan
+3. `03-axl-contributor-invitation.html` – letter to named §10.2 vendors
 
 These are kept in the repo as the editorial source of truth. They are not served by the site.

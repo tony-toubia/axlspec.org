@@ -17,7 +17,7 @@ const TERMS: { term: string; def: React.ReactNode }[] = [
     def: "The descriptive category phrase. Used as a category name. Not a trademark; free for any party to use.",
   },
   {
-    term: "ASP — AXL Specification Proposal",
+    term: "ASP – AXL Specification Proposal",
     def: "The unit of substantive comment on the specification. Filed as a GitHub issue using the ASP template. Receives a public disposition (accepted, deferred, declined) from the relevant working group.",
   },
   {
@@ -53,12 +53,12 @@ const TERMS: { term: string; def: React.ReactNode }[] = [
     def: "Pillar 4 of the AXL Reference (§5.4). Continuous, in-session feedback loops with statistical significance reporting and lift measurement.",
   },
   {
-    term: "L1, L2, L3 — Conformance levels",
+    term: "L1, L2, L3 – Conformance levels",
     def: "Functional, Production, Reference. L1 and L2 are self-attested; L3 is verified by axlspec.org and is the prerequisite for the AXL™ mark.",
   },
   {
     term: "Maturity model",
-    def: "§ 9 of the AXL Reference. A five-tier classification of operator capability — Tooled, Coordinated, Decisioned, Agentic, Reference.",
+    def: "§ 9 of the AXL Reference. A five-tier classification of operator capability – Tooled, Coordinated, Decisioned, Agentic, Reference.",
   },
   {
     term: "Perceive",
@@ -66,7 +66,7 @@ const TERMS: { term: string; def: React.ReactNode }[] = [
   },
   {
     term: "Render",
-    def: "Pillar 3 of the AXL Reference (§5.3). Real-time substitution of page content, copy, and component state — flicker-free, framework-agnostic.",
+    def: "Pillar 3 of the AXL Reference (§5.3). Real-time substitution of page content, copy, and component state – flicker-free, framework-agnostic.",
   },
   {
     term: "Required vs. Recommended capability",
@@ -82,7 +82,7 @@ const TERMS: { term: string; def: React.ReactNode }[] = [
   },
   {
     term: "Working group",
-    def: "One of five public-record bodies that evolve the specification — Perceive, Decide, Render, Learn, Governance. See /working-groups.",
+    def: "One of five public-record bodies that evolve the specification – Perceive, Decide, Render, Learn, Governance. See /working-groups.",
   },
 ];
 

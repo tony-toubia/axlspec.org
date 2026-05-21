@@ -5,7 +5,7 @@ import { DocPage } from "@/app/components/DocPage";
 export const metadata: Metadata = {
   title: "Conformance levels",
   description:
-    "AXL defines three conformance levels — L1 Functional, L2 Production, L3 Reference. L1 and L2 are self-attested; L3 is verified by axlspec.org and is the prerequisite for the AXL™ certification mark.",
+    "AXL defines three conformance levels – L1 Functional, L2 Production, L3 Reference. L1 and L2 are self-attested; L3 is verified by axlspec.org and is the prerequisite for the AXL™ certification mark.",
 };
 
 export default function ConformancePage() {
@@ -37,19 +37,19 @@ export default function ConformancePage() {
         </thead>
         <tbody>
           <tr>
-            <td><strong>L1 — Functional</strong></td>
+            <td><strong>L1 – Functional</strong></td>
             <td>Required clauses of §5.1–§5.4 across all four pillars.</td>
             <td>Self-attested via Conformance Statement.</td>
-            <td>None — &ldquo;AXL-conformant L1&rdquo; may be used descriptively.</td>
+            <td>None – &ldquo;AXL-conformant L1&rdquo; may be used descriptively.</td>
           </tr>
           <tr>
-            <td><strong>L2 — Production</strong></td>
+            <td><strong>L2 – Production</strong></td>
             <td>L1 plus published reproduction of Appendix A benchmarks.</td>
             <td>Self-attested with audit-ready artifacts.</td>
-            <td>None — &ldquo;AXL-conformant L2&rdquo; may be used descriptively.</td>
+            <td>None – &ldquo;AXL-conformant L2&rdquo; may be used descriptively.</td>
           </tr>
           <tr>
-            <td><strong>L3 — Reference</strong></td>
+            <td><strong>L3 – Reference</strong></td>
             <td>L1 + L2 + Recommended clauses across all four pillars.</td>
             <td>Verified review by axlspec.org against the full specification.</td>
             <td>AXL™ certification mark, per the <Link href="/trademark">trademark policy</Link>.</td>

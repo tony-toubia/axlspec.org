@@ -31,13 +31,13 @@ const SITE_URL = "https://axlspec.org";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "AXL — The Agentic Experience Layer specification",
+    default: "AXL – The Agentic Experience Layer specification",
     template: "%s · AXL",
   },
   description:
-    "The AXL Reference is an open specification for the Agentic Experience Layer — the personalization infrastructure that replaces the CDP-plus-A/B-plus-journey stack. Published by axlspec.org under CC BY 4.0.",
+    "The AXL Reference is an open specification for the Agentic Experience Layer – the personalization infrastructure that replaces the CDP-plus-A/B-plus-journey stack. Published by axlspec.org under CC BY 4.0.",
   openGraph: {
-    title: "AXL — The Agentic Experience Layer specification",
+    title: "AXL – The Agentic Experience Layer specification",
     description:
       "An open specification defining the Agentic Experience Layer category. Published under CC BY 4.0.",
     url: SITE_URL,
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AXL — The Agentic Experience Layer specification",
+    title: "AXL – The Agentic Experience Layer specification",
     description:
       "An open specification defining the Agentic Experience Layer category.",
   },

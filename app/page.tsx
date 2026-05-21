@@ -44,7 +44,7 @@ const LEVELS = [
 export default function Home() {
   return (
     <>
-      {/* HERO — quieter, spec-document register */}
+      {/* HERO – quieter, spec-document register */}
       <section className="border-b rule-strong">
         <div className="mx-auto max-w-[1180px] px-6 sm:px-10 pt-20 pb-20">
           <p className="eyebrow">The AXL Reference · v1.0 Draft</p>
@@ -57,7 +57,7 @@ export default function Home() {
 
           <p className="mt-8 font-serif text-[18px] sm:text-[20px] leading-[1.55] text-ink-soft max-w-[62ch]">
             This document defines a class of personalization infrastructure characterised
-            by four required pillars — perceive, decide, render, learn — and three
+            by four required pillars – perceive, decide, render, learn – and three
             conformance levels. Stewarded by axlspec.org. Published under CC BY 4.0.
           </p>
 
@@ -97,7 +97,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ABSTRACT — clinical, no rhetoric */}
+      {/* ABSTRACT – clinical, no rhetoric */}
       <section className="border-b rule">
         <div className="mx-auto max-w-[1180px] px-6 sm:px-10 py-20 grid md:grid-cols-[200px_1fr] gap-10">
           <p className="eyebrow self-start">Abstract</p>
@@ -126,7 +126,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOUR PILLARS — neutral summaries */}
+      {/* FOUR PILLARS – neutral summaries */}
       <section className="border-b rule">
         <div className="mx-auto max-w-[1180px] px-6 sm:px-10 py-20">
           <div className="grid md:grid-cols-[200px_1fr] gap-10">
@@ -168,7 +168,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONFORMANCE — restrained, no marketing framing */}
+      {/* CONFORMANCE – restrained, no marketing framing */}
       <section className="border-b rule">
         <div className="mx-auto max-w-[1180px] px-6 sm:px-10 py-20 grid md:grid-cols-[200px_1fr] gap-10">
           <div>
@@ -201,23 +201,23 @@ export default function Home() {
                 href="/conformance"
                 className="font-mono text-[11px] tracking-[0.10em] uppercase text-ink underline decoration-rule-strong underline-offset-[4px] hover:decoration-ink"
               >
-                § 6 — Conformance methodology
+                § 6 – Conformance methodology
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CONTENTS — a single, minimal navigation block, no audience-tiered marketing */}
+      {/* CONTENTS – a single, minimal navigation block, no audience-tiered marketing */}
       <section>
         <div className="mx-auto max-w-[1180px] px-6 sm:px-10 py-20">
           <p className="eyebrow">Contents</p>
           <ul className="mt-6 grid sm:grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-2 max-w-[860px] text-[14px]">
             {[
               ["/spec/v1.0", "The AXL Reference v1.0"],
-              ["/glossary", "§ 3 — Terminology"],
-              ["/maturity", "§ 9 — Maturity model"],
-              ["/conformance", "§ 6 — Conformance"],
+              ["/glossary", "§ 3 – Terminology"],
+              ["/maturity", "§ 9 – Maturity model"],
+              ["/conformance", "§ 6 – Conformance"],
               ["/certification", "Certification process"],
               ["/trademark", "Trademark policy"],
               ["/working-groups", "Working groups"],

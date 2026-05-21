@@ -20,7 +20,7 @@ export default function GovernancePage() {
       subtitle="axlspec.org begins as an AXO-controlled entity and transitions to a multi-stakeholder governance body. The roadmap below sets out the trigger conditions and the structural model."
       meta={[
         { label: "Authority", value: <Link href="/spec/v1.0#governance">§ 12.1 of the AXL Reference</Link> },
-        { label: "Current phase", value: "Phase 0 — founding stewardship" },
+        { label: "Current phase", value: "Phase 0 – founding stewardship" },
         { label: "Target model", value: "501(c)(6) or equivalent multi-stakeholder body" },
       ]}
     >
@@ -41,17 +41,17 @@ export default function GovernancePage() {
         </thead>
         <tbody>
           <tr>
-            <td><strong>0 — Founding stewardship</strong></td>
+            <td><strong>0 – Founding stewardship</strong></td>
             <td>axlspec.org operated by AXO. Editorial board appointed by AXO; working-group chairs invited from the community.</td>
             <td>v1.0 Final published; ≥ 3 verified L3 certifications issued.</td>
           </tr>
           <tr>
-            <td><strong>1 — Mixed governance</strong></td>
+            <td><strong>1 – Mixed governance</strong></td>
             <td>Editorial board reconstituted with AXO holding ≤ 50% of voting seats. Independent chair seated.</td>
             <td>≥ 10 verified L3 certifications across ≥ 5 distinct legal-entity vendors.</td>
           </tr>
           <tr>
-            <td><strong>2 — Multi-stakeholder body</strong></td>
+            <td><strong>2 – Multi-stakeholder body</strong></td>
             <td>axlspec.org operating under 501(c)(6) or equivalent. AXO holds the same voting seat as any other certified vendor.</td>
             <td>Steady state. Reviewed annually.</td>
           </tr>
@@ -69,7 +69,7 @@ export default function GovernancePage() {
 
       <div className="callout">
         <p>
-          <strong>Open question:</strong> the optimal multi-stakeholder model — 501(c)(6) trade association, Linux Foundation project, OASIS member, independent foundation — depends on the geographic distribution of certified vendors and on community preference. The choice will be settled at the Phase 1 → Phase 2 transition with input from the working groups.
+          <strong>Open question:</strong> the optimal multi-stakeholder model – 501(c)(6) trade association, Linux Foundation project, OASIS member, independent foundation – depends on the geographic distribution of certified vendors and on community preference. The choice will be settled at the Phase 1 → Phase 2 transition with input from the working groups.
         </p>
       </div>
     </DocPage>

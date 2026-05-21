@@ -3,7 +3,7 @@ import Link from "next/link";
 import { DocPage } from "@/app/components/DocPage";
 
 export const metadata: Metadata = {
-  title: "The AXL Reference v1.0 — Draft",
+  title: "The AXL Reference v1.0 – Draft",
   description:
     "Open specification for the Agentic Experience Layer. Four pillars, three conformance levels, a published test methodology, and a buyer's-guide language for the personalization category.",
 };
@@ -54,7 +54,7 @@ export default function SpecV1() {
         Personalization, as currently practiced, is typically assembled from several discrete systems: a customer data platform, a segmentation tool, an A/B-testing tool, a journey orchestrator, and an attribution surface. Each operates on a separate schema and is configured by a separate operator.
       </p>
       <p>
-        This document specifies an alternative architecture in which the four functions of <em>perceive</em>, <em>decide</em>, <em>render</em>, and <em>learn</em> are operated as a single in-session layer. The category name &mdash; the Agentic Experience Layer &mdash; is descriptive and is intentionally distinct from any product name.
+        This document specifies an alternative architecture in which the four functions of <em>perceive</em>, <em>decide</em>, <em>render</em>, and <em>learn</em> are operated as a single in-session layer. The category name &ndash; the Agentic Experience Layer &ndash; is descriptive and is intentionally distinct from any product name.
       </p>
 
       <h2 id="scope">
@@ -80,7 +80,7 @@ export default function SpecV1() {
         <li><strong>Session:</strong> a contiguous sequence of visitor interactions, bounded by a configurable inactivity timeout. Identity-free by default.</li>
         <li><strong>Treatment:</strong> a specific rendering of content, copy, or interaction selected by the agent for a given session.</li>
         <li><strong>Conformance Statement:</strong> a public document in which an implementer attests, at L1 or L2, to specific clauses of this specification.</li>
-        <li><strong>ASP:</strong> AXL Specification Proposal — the unit of substantive comment.</li>
+        <li><strong>ASP:</strong> AXL Specification Proposal – the unit of substantive comment.</li>
       </ul>
 
       <h2 id="principles">
@@ -88,7 +88,7 @@ export default function SpecV1() {
         Architectural principles
       </h2>
       <p>
-        The four pillars in §5 are required. The principles below are normative — they constrain how the pillars are implemented.
+        The four pillars in §5 are required. The principles below are normative – they constrain how the pillars are implemented.
       </p>
       <ul>
         <li><strong>Identity-free by default.</strong> No persistent identifier required for L1 conformance. Implementations that link sessions to identity do so only at the operator&apos;s explicit configuration.</li>
@@ -113,7 +113,7 @@ export default function SpecV1() {
 
       <h3 id="pillar-decide">5.2 Decide</h3>
       <p>
-        The system selects a treatment for the current session. Required: the decision is autonomous, made at request time, and reproducible from the in-session signal alone. Recommended: the decision is explainable — an operator can inspect why a treatment was selected for a session.
+        The system selects a treatment for the current session. Required: the decision is autonomous, made at request time, and reproducible from the in-session signal alone. Recommended: the decision is explainable – an operator can inspect why a treatment was selected for a session.
       </p>
 
       <h3 id="pillar-render">5.3 Render</h3>
@@ -147,13 +147,13 @@ export default function SpecV1() {
             <td><strong>L1</strong></td>
             <td>Functional</td>
             <td>Required clauses of §5; self-attested via Conformance Statement</td>
-            <td>None — implementation may describe itself as AXL-conformant L1</td>
+            <td>None – implementation may describe itself as AXL-conformant L1</td>
           </tr>
           <tr>
             <td><strong>L2</strong></td>
             <td>Production</td>
             <td>L1 plus reproduction of Appendix A benchmarks; self-attested</td>
-            <td>None — implementation may describe itself as AXL-conformant L2</td>
+            <td>None – implementation may describe itself as AXL-conformant L2</td>
           </tr>
           <tr>
             <td><strong>L3</strong></td>
@@ -188,7 +188,7 @@ export default function SpecV1() {
         Maturity model
       </h2>
       <p>
-        The maturity model classifies operator capability — not vendor capability. A buyer locates themselves on the model; a vendor demonstrates which maturity levels their platform supports. The standalone, buyer-facing rendering of §9 lives at <Link href="/maturity">/maturity</Link>.
+        The maturity model classifies operator capability – not vendor capability. A buyer locates themselves on the model; a vendor demonstrates which maturity levels their platform supports. The standalone, buyer-facing rendering of §9 lives at <Link href="/maturity">/maturity</Link>.
       </p>
 
       <h2 id="landscape">

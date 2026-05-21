@@ -15,7 +15,7 @@ export function SiteHeader() {
         <Link
           href="/"
           className="font-serif text-[19px] tracking-tight text-ink hover:no-underline flex items-baseline gap-2"
-          aria-label="AXL — home"
+          aria-label="AXL – home"
         >
           <span className="font-medium">AXL</span>
           <span className="hidden sm:inline font-mono text-[10px] tracking-[0.18em] uppercase text-ink-muted">

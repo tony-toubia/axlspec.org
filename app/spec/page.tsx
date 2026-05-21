@@ -12,7 +12,7 @@ const VERSIONS = [
   {
     v: "v1.0 Draft",
     href: "/spec/v1.0",
-    status: "Current — open for comment",
+    status: "Current – open for comment",
     note: "Published as a Working Draft. ASPs accepted at github.com/tony-toubia/axlspec.org/issues.",
     current: true,
   },

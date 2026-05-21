@@ -5,7 +5,7 @@ import { DocPage } from "@/app/components/DocPage";
 export const metadata: Metadata = {
   title: "Working groups",
   description:
-    "Five working groups — Perceive, Decide, Render, Learn, Governance — meet biweekly to evolve the AXL Reference. Seats are open. Working-group contributions earn editorial-section credit in v1.x.",
+    "Five working groups – Perceive, Decide, Render, Learn, Governance – meet biweekly to evolve the AXL Reference. Seats are open. Working-group contributions earn editorial-section credit in v1.x.",
 };
 
 const GROUPS = [
@@ -51,7 +51,7 @@ export default function WorkingGroupsPage() {
     <DocPage
       eyebrow="Working groups"
       title={<>Working groups.</>}
-      subtitle="Five public-record bodies — one per pillar plus governance — that evolve the AXL Reference. Seats are open. Contributions are credited in the editorial section of subsequent specification versions."
+      subtitle="Five public-record bodies – one per pillar plus governance – that evolve the AXL Reference. Seats are open. Contributions are credited in the editorial section of subsequent specification versions."
       meta={[
         { label: "Charter", value: <Link href="/spec/v1.0#governance">§ 12.1 of the AXL Reference</Link> },
         { label: "Calendar", value: <a href="https://github.com/tony-toubia/axlspec.org">github.com/tony-toubia/axlspec.org</a> },

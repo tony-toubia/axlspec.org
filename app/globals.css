@@ -59,7 +59,7 @@ body {
   .rule-strong { border-color: var(--color-rule-strong); }
 }
 
-/* DOC-PROSE — typography for spec/policy/long-form pages */
+/* DOC-PROSE – typography for spec/policy/long-form pages */
 .doc-prose {
   font-size: 15px;
   line-height: 1.7;

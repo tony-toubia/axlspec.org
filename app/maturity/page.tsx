@@ -5,7 +5,7 @@ import { DocPage } from "@/app/components/DocPage";
 export const metadata: Metadata = {
   title: "Maturity model",
   description:
-    "A buyer-facing model for locating your personalization stack. Five tiers — Tooled, Coordinated, Decisioned, Agentic, Reference — calibrated against the four AXL pillars.",
+    "A buyer-facing model for locating your personalization stack. Five tiers – Tooled, Coordinated, Decisioned, Agentic, Reference – calibrated against the four AXL pillars.",
 };
 
 const TIERS = [
