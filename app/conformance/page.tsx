@@ -72,7 +72,8 @@ export default function ConformancePage() {
 
       <div className="callout">
         <p>
-          <strong>Conformance Statement template:</strong> a fillable template is forthcoming in the project repository. Until publication of the template, self-attestations may be drafted against the clauses of § 5 directly.
+          <strong>Conformance Statement template:</strong> a fillable template is published in the project repository at{" "}
+          <a href="https://github.com/tony-toubia/axlspec.org/blob/main/templates/conformance-statement.md"><code>templates/conformance-statement.md</code></a>. Self-attestations may also be drafted against the clauses of § 5 directly.
         </p>
       </div>
 
