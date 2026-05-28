@@ -169,7 +169,7 @@ export default function SpecV1() {
         Agentic interface surface
       </h2>
       <p>
-        AXL-conformant systems expose a minimum interface against which autonomous agents, third-party orchestrators, and conformance test harnesses operate. The surface is normative. The bindings (HTTP/JSON, WebSocket, MCP, etc.) are illustrative; vendors may implement any binding that satisfies the semantic surface described here.
+        AXL-conformant systems expose a minimum interface against which autonomous agents, third-party orchestrators, and conformance test harnesses operate. The surface is normative; bindings are not. Vendors may implement any binding that satisfies the semantic surface described here. The <strong>Model Context Protocol (MCP)</strong> is the recommended binding: it is the open standard for agent-tool interfaces and the substrate on which adjacent agentic standards are built (see <a href="#landscape">§ 10.3</a>). Implementations exposing an MCP surface gain natural interoperability with those adjacent standards. HTTP/JSON and WebSocket remain fully acceptable.
       </p>
       <div className="callout">
         <p><strong>Editorial note.</strong> § 7 is expected to evolve through the comment period. Implementers with production experience of idempotency, retry semantics, and treatment-cache invalidation are encouraged to file ASPs.</p>
@@ -196,8 +196,21 @@ export default function SpecV1() {
         Reference landscape
       </h2>
       <p>
-        § 10.1 enumerates the architectural patterns in current commercial use. § 10.2 lists specific platforms whose architecture overlaps with one or more pillars of this specification and indicates, per pillar, the conformance gap. Listings are structural and non-normative; corrections may be filed as ASPs.
+        § 10.1 enumerates the architectural patterns in current commercial use. § 10.2 lists specific platforms whose architecture overlaps with one or more pillars of this specification and indicates, per pillar, the conformance gap. § 10.3 positions AXL relative to adjacent open standards for agentic systems. All listings are structural and non-normative; corrections may be filed as ASPs.
       </p>
+
+      <h3 id="adjacent-standards">10.3 Adjacent agentic standards</h3>
+      <p>
+        AXL sits within a broader landscape of open standards for agentic systems. Two are particularly load-bearing for AXL implementers.
+      </p>
+      <ul>
+        <li>
+          <strong>Model Context Protocol (MCP).</strong> General-purpose open standard for agent interfaces to tools, data, and workflows. The substrate § 7 recommends as a binding. See <a href="https://modelcontextprotocol.io">modelcontextprotocol.io</a>.
+        </li>
+        <li>
+          <strong>Ad Context Protocol (AdCP).</strong> An open standard for agentic media transactions: agents discovering inventory, planning campaigns, executing media buys, activating audiences, and managing creatives across DSPs, SSPs, and publishers. AdCP is built on MCP and is governed by AgenticAdvertising.org. <strong>AdCP and AXL address adjacent but distinct categories</strong> – AdCP handles the agentic demand side; AXL handles agentic on-property personalization. They meet at the moment an AdCP-driven media buy lands a visitor on a brand site running an AXL-conformant system. AdCP is not a dependency or a substitute for AXL; the two protocols are complementary. See <a href="https://adcontextprotocol.org">adcontextprotocol.org</a>.
+        </li>
+      </ul>
 
       <h2 id="buyers-guide">
         <span className="num">§ 11</span>
