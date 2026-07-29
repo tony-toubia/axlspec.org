@@ -1,9 +1,9 @@
-> **DRAFT – pending owner sign-off.** The §5 clause-by-clause attestation and evidence below are complete and were verified against the AXO codebase. Before this is filed as a Conformance Statement (pull-requested into `conformance-statements/` on axlspec.org), an AXO owner with authority to attest must review and sign off, and the named legal entity (AXO Solutions, Inc.) must be confirmed against the incorporation record and registered as of the filing date. A self-attestation claiming a clause the product does not satisfy is a misrepresentation addressed under §4 of the AXL trademark policy. Accuracy here protects AXO more than optimism does.
+> **Filed self-attestation.** The §5 clause-by-clause attestation and evidence below were verified against the AXO codebase, reviewed and signed off by an AXO owner with authority to attest, and the named legal entity confirmed against the incorporation record. A self-attestation claiming a clause the product does not satisfy is a misrepresentation addressed under §4 of the AXL trademark policy; this statement is maintained on that basis. Material divergence between the attested clauses and the shipped product obliges AXO to amend or withdraw it — see §6 Validity.
 
 # AXL Conformance Statement
 
 **Specification:** AXL Reference v1.0 Working Draft.
-**Statement status:** Completed draft – pending AXO owner sign-off before filing.
+**Statement status:** Filed. Self-attested at L1 by the implementer.
 
 ## 1. Implementer
 
@@ -11,7 +11,7 @@
 | --- | --- |
 | Legal entity | AXO Solutions, Inc. |
 | Primary contact | AXO Conformance, legal@axoapp.ai |
-| Date of attestation | Set on filing. |
+| Date of attestation | 2026-07-16 |
 
 ## 2. Product under attestation
 
@@ -67,6 +67,8 @@ N/A. This is an L1 statement.
 | Field | Value |
 | --- | --- |
 | Valid for | The v1.x cycle of the AXL Reference specification. |
+| Re-attestation | Required on each minor version of the specification, per AXL Reference §6.4. |
+| Withdrawal | By pull request removing this file, per AXL Reference §6.5. Material divergence from the attested clauses obliges amendment or withdrawal. |
 
 ## 7. Architectural principles, §4 (optional, recommended)
 
@@ -78,4 +80,4 @@ N/A. This is an L1 statement.
 
 ---
 
-*Prepared as a draft skeleton by axlspec.org tooling; §5 attestation and evidence completed by the implementer. Self-published by the implementer once an AXO owner has signed off. AXO is attested under the same process as any other vendor; founding-sponsor status confers no conformance advantage (AXL Reference, governance §12.1).*
+*Skeleton prepared by axlspec.org tooling; §5 attestation and evidence completed by the implementer; self-published by the implementer following AXO owner sign-off. AXO is attested under the same process as any other vendor; founding-sponsor status confers no conformance advantage (AXL Reference, governance §12.1).*
