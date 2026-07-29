@@ -70,7 +70,7 @@ export default function WorkingGroupsPage() {
             <th>Code</th>
             <th>Group</th>
             <th>Chair</th>
-            <th>Cadence</th>
+            <th>Schedule</th>
           </tr>
         </thead>
         <tbody>
