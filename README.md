@@ -2,6 +2,20 @@
 
 The public-facing website for the [AXL Reference](https://axlspec.org/spec/v1.0) – an open specification for the **Agentic Experience Layer** category, stewarded by axlspec.org. Founding sponsor: AXO.
 
+## Canonical domain
+
+**`axlspec.org` is the only domain for this project. Never write `axl.org`.**
+
+`axl.org` is registered to an unrelated third party and is in active use — it
+resolves to `178.63.92.236` on four Swiss nameservers (`ns5`–`ns9.beckert.ch`),
+verified 2026-07-29. It is not available and is not acquirable at a sensible
+price. Any reference to it sends readers to a stranger's site, which is
+especially damaging on a page whose purpose is to establish category authority.
+
+This was a real defect, not a hypothetical: `axl.org` appeared 43 times across
+`reference/` and in the shipped footer of the AXO marketing page. Both are
+fixed. If you are drafting new material and reach for the shorter name, don't.
+
 ## Stack
 
 - **Framework** – [Next.js 16](https://nextjs.org) App Router, React 19, TypeScript
