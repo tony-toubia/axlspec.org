@@ -20,7 +20,7 @@ export default function TrademarkPage() {
       subtitle="Two marks, two owners, one policy. The policy governs how implementers, certified vendors, analysts, and journalists may refer to AXL, the AXL™ certification mark, and the Agentic Experience Layer category."
       meta={[
         { label: "Status", value: "Draft · effective with v1.0 Final" },
-        { label: "Wordmark owner", value: "AXO" },
+        { label: "Wordmark owner", value: "AXO Solutions, Inc." },
         { label: "Certification-mark owner", value: "axlspec.org" },
         { label: "Issues", value: <a href="https://github.com/tony-toubia/axlspec.org/issues">github.com/tony-toubia/axlspec.org/issues</a> },
       ]}
@@ -36,12 +36,13 @@ export default function TrademarkPage() {
 
       <h3>1.1 The wordmark – AXL</h3>
       <p>
-        <strong>AXL</strong> is used as a wordmark by AXO and is intended to be filed
-        as a standard-character mark in Class 9 (downloadable software) and Class 42
-        (SaaS / technology services) in the United States, subject to clearance and
-        counsel review. International filings are intended to follow. AXO intends
-        to license the wordmark to axlspec.org for use in connection with the
-        specification, the certification program, and the AXL™ certification mark.
+        <strong>AXL</strong> is used as a wordmark by <strong>AXO Solutions, Inc.</strong>{" "}
+        (&ldquo;AXO&rdquo;) and is intended to be filed as a standard-character mark in
+        Class 9 (downloadable software) and Class 42 (SaaS / technology services) in the
+        United States, subject to clearance and counsel review. International filings are
+        intended to follow. AXO intends to license the wordmark to axlspec.org for use in
+        connection with the specification, the certification program, and the AXL™
+        certification mark.
       </p>
 
       <h3>1.2 The certification mark – AXL™</h3>
